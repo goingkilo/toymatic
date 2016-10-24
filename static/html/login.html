@@ -1,0 +1,79 @@
+<script src="../js/jquery.js"></script>
+<link rel="stylesheet" href="../css/bootstrap-theme.css">
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/fonts.css">
+<script src="../js/bootstrap.js"></script>
+
+
+<style>
+
+    body {
+        font-family: newspaper;
+    }
+    h1  {
+        font-family: typewriter;
+    }
+    form {
+        display: inline-block;
+    }
+    .form-group {
+        text-align: center;
+        padding-bottom: 25px;
+
+    }
+    li {
+        border-bottom: solid 1px black;
+    }
+
+    li:hover {
+        background-color: #B6CDE5;
+    }
+    #my_date {
+        float:right;
+    }
+
+</style>
+<script>
+
+    $(document).ready(function(){
+        console.log('loading paper' + new Date());
+    });
+</script>
+
+<body>
+
+<section>
+    <div class="container">
+
+        <div class="row" style="margin-top:4px; text-align: center;">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-3">
+
+                <div class="form">
+                    <!--<form class="register-form" action="/api/auth/register" method="POST">-->
+                        <!--<input type="text" placeholder="name"/>-->
+                        <!--<input type="password" placeholder="password"/>-->
+                        <!--<input type="text" placeholder="email address"/>-->
+                        <!--<button>create</button>-->
+                        <!--<p class="message">Already registered? <a href="#">Sign In</a></p>-->
+                    <!--</form>-->
+                    <form class="login-form" action="/api/auth/login" method="POST">
+                        <input type="text" placeholder="username" name="username"/>
+                        <input type="password" placeholder="password" name="password"/>
+                        <button>login</button>
+                        <p class="message">Not registered? <a href="#">Create an account</a></p>
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-md-5">
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+</body>

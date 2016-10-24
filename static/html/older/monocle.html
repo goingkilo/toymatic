@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+	integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+	integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+	crossorigin="anonymous">
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+	integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+	crossorigin="anonymous"></script>
+
+
+<title>o-Q }</title>
+<style>
+@font-face {
+	font-family: 'newspaper'; #
+	src: url('./OldNewspaperTypes.ttf' ) format('truetype');;
+}
+
+body { #
+	background-image: url('./white_wall.png');
+	background-repeat: repeat;
+	font-family: newspaper;
+}
+
+.email {
+	padding: 10px 10px 10px 0px;
+	width: 71%;
+}
+
+.submit-buttons {
+	float: right;
+	padding-top: 5px;
+	padding-right: 3px;
+}
+
+td {
+	padding: 5px;
+	border-bottom: solid 1px black;
+}
+
+#my_date {
+	float: right;
+}
+
+.item:hover {
+	margin-top: 20px;
+	background-color: #B6CDE5;
+}
+</style>
+
+<script>
+	function get_date() {
+		var month_names = [ "January", "February", "March", "April", "May",
+				"June", "July", "August", "September", "October", "November",
+				"December" ];
+		var today = new Date();
+		var dd = today.getDate();
+		var mm = month_names[today.getMonth()];
+		var yyyy = today.getFullYear();
+		if (mm < 10) {
+			mm = '0' + mm
+		}
+		var today = dd + ' ' + mm + ' ' + yyyy;
+		return today;
+	}
+
+	function load_items() {
+		var settings = {
+			"async" : true,
+			"crossDomain" : true,
+			"url" : "/items.json",
+			"method" : "GET",
+			"headers" : {
+				"cache-control" : "no-cache"
+			}
+		}
+		$.ajax(settings).done(
+			function(response) {
+				var x = JSON.parse(response);
+
+				var element = "<tr><td class=\"item\" id=\"[id]\">[item]</td></tr>";
+				var ret = [];
+				//console.log( x);
+				for ( var b in x) {
+					var html = element.replace('[id]',
+							x[b]["key_id"]).replace('[item]',
+							x[b]["item"]);
+					console.log();
+					$('tbody').append(html)
+				}
+
+			});
+		}
+
+	function put_item(x) {
+		var settings = {
+			"async" : true,
+			"crossDomain" : true,
+			"url" : "/",
+			"method" : "POST",
+			"headers" : {
+				"cache-control" : "no-cache",
+				"content-type" : "application/x-www-form-urlencoded"
+			},
+			"data" : {
+				"item" : x
+			}
+		}
+
+		$.ajax(settings).done(function(response) {
+			console.log(response);
+			//document.location = "/capture.html";
+			console.log("something here ");
+		});
+	}
+
+	$(document).ready(
+			function() {
+				console.log('loading paper' + new Date());
+				$('#my_date').text(get_date());
+
+				load_items();
+
+				$('#add-item-button').click(function(x) {
+					put_item($('#detail').val());
+				});
+				/****
+				if (navigator.geolocation) {
+				    console.log( 'has geolocation');
+				    navigator.geolocation.getCurrentPosition(
+				        function(x) {
+				            $('#my_place').text( "(" + x.coords.latitude + ',' + x.coords.longitude + ")" );
+				        });
+				}
+				else {
+				    $('#my_place').text( "Last seen in Chicago");
+				}
+				
+
+				$('#toggle').click( function(x) {
+				    if( $('#add-panel').css('display') === 'none' ) {
+				    console.log('hidden');
+				        $('#add-panel').show();
+				    }
+				    else {
+				    console.log('show');
+				        $('#add-panel').hide();
+				    }
+				});
+				 ****/
+
+				$('#clear-pane').click(function(x) {
+					console.log('X');
+					$('#detail').val("");
+				});
+
+				$('#items-table').on(
+						"click",
+						"td.item",
+						function(e) {
+							var x = e.target;
+							// x.style.textDecoration =  x.style.textDecoration == "" ? 'line-through' : x.style.textDecoration = "";
+							document.location = '/edit?id=' + e.target.id
+									+ '&title=' + x.innerText;
+						});
+
+			});
+</script>
+</head>
+
+<body>
+	<div class="container">
+
+		<!-- header  --->
+		<div class="row" style="margin-top: 4px; text-align: left;">
+			<div class="col-md-2"></div>
+			<div class="col-md-6">
+				<h2>Things to do</h2>
+				<div id='my_date'></div>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+		<div class="row" style="margin-top: 4px; text-align: center;">
+			<div class="col-md-6"></div>
+			<div class="col-md-6">
+				<div id='my_date'></div>
+			</div>
+		</div>
+
+
+		<div class="row" id="add-panel" style="margin-top: 4px;">
+			<div class="col-md-2"></div>
+			<div class="col-md-6">
+				<form id="add-item-form" action="/" method="POST">
+					<!-- {% csrf_token %} -->
+					<textarea class="form-control" rows="1" id="detail" name="detail"></textarea>
+					<input type="hidden" name="start" value="1234-12-23"> <input
+						type="hidden" name="due" value="1234-12-23"> <input
+						type="hidden" name="owner" value="goingkilo@gmail.com"> <input
+						type="hidden" name="status" value="New"> <input
+						type="hidden" name="category" value="Work">
+					<div class="submit-buttons">
+						<button id='add-item-button' type="submit" class="btn btn-default">
+							Note to self</button>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-6">
+				<table id="items-table">
+					<tbody>
+						<!-- 
+						<tr>
+							<td class="item" id="i{{x.id}}">{{x.detail}}</td>
+						</tr> 
+						-->
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="col-md-4"></div>
+	</div>
+
+	</div>
+</body>
+</html>
