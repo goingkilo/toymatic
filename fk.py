@@ -15,6 +15,49 @@ search = 'https://affiliate-api.flipkart.net/affiliate/search/json?query=searchT
 orders_report = 'https://affiliate-api.flipkart.net/affiliate/report/orders/detail/json?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&status=<status>&offset=0'
 
 
+##
+##   local content
+##
+
+def load_products(x):
+    a = json.load( open( './json/'+x+'.json'))
+    b  = a['productInfoList']
+    c = []
+    e = []
+    for i in b:
+        d = {}
+        print json.dumps(i,indent=4), 10*'#'
+        d['url'] = i['productBaseInfoV1']['productUrl']
+        d['brand'] = i['productBaseInfoV1']['productBrand']
+        d['color'] = i['productBaseInfoV1']['attributes']['color']
+        d['title'] = i['productBaseInfoV1']['title']
+        images = i['productBaseInfoV1']['imageUrls']
+        if images:
+            d['image'] = images[ images.keys()[0]]
+
+        d['price'] = i['productBaseInfoV1']['flipkartSpecialPrice']['amount']
+        d['id'] =  i['productBaseInfoV1']['productId']
+        d['desc'] = i['productBaseInfoV1']['productDescription']
+        d['inStock'] =  i['productBaseInfoV1']['inStock']
+        #d['available'] =   i['productBaseInfoV1']['productAttributes']['isAvailable']
+
+        if len(e) == 3:
+            c.append(e)
+            e = []
+        e.append(d)
+    print e
+    return c
+
+def load_categories():
+    # a1 = json.load( open( './json/categories.json'))
+    # print json.dumps(a1,indent=4)
+    # b1 =  a1['apiGroups']['affiliate']['apiListings'].values()
+    return json.load( open( './json/categories.json'))
+
+##
+## end local content
+##
+
 def get(url):
     #print url
     req = urllib2.Request(url)

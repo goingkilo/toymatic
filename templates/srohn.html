@@ -59,7 +59,14 @@
 
     ul.pagination li a:hover:not(.active) {background-color: #ddd;}
 
-    div.center {text-align: center;}
+    div.right {
+        text-align: right;
+        margin-top: 4px;
+    }
+     div.center {
+         text-align: center;
+         margin-top: 4px;
+     }
 
  </style>
 <script>
@@ -86,15 +93,27 @@
 
         <div style="border : solid 1px grey;"></div>
         <div>
-            goingkilo@gmail.com
-            <div id='my_date'></div>
+            <div>
+                goingkilo@gmail.com
+                <div id='my_date'></div>
+            </div>
+
+
         </div>
+
         <div style="border : solid 1px black;"></div>
         <!-- row 2 --->
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
 
-        <div class="row" style="margin-top:4px;">
-            <div class="col-md-12">
                 <div class="center">
+                    {{selectedpage}}
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="right">
                     <ul class="pagination">
 
                         <li><a href="#">«</a></li>
@@ -115,7 +134,9 @@
             </div>
 
             <div class="col-md-6">
-                {{page}}
+                {% for i in page %}
+                    {{i}}<br>
+                {% endfor %}
             </div>
 
             <div class="col-md-3">

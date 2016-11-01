@@ -1,11 +1,11 @@
-<script src="js/jquery.js"></script>
-<link rel="stylesheet" href="css/bootstrap-theme.css">
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/fonts.css">
-<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="/static/js/jquery.js"></script>
+<link rel="stylesheet" href="/static/css/bootstrap-theme.css">
+<link rel="stylesheet" href="/static/css/bootstrap.css">
+<link rel="stylesheet" href="/static/css/fonts.css">
+<script type="text/javascript" src="/static/js/bootstrap.js"></script>
 
 
- <style>
+<style>
 
      body {
          font-family: newspaper;
@@ -34,17 +34,39 @@
 
  </style>
 <script>
-
-    $(document).ready(function(){
-        console.log('loading paper' + new Date());
-        $('#my_date').text( get_date() );
-    });
+    function logout() {
+        document.location = '/logout';
+    }
 </script>
 
 <body>
 
 <section>
     <div class="container">
+
+        <!-- nav bar -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">5 Kilo Adventures Ltd</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#" onclick="javascript:go_home()">News</a></li>
+                    <li><a href="#">Stocks</a></li>
+                    <li><a href="#">Maps</a></li>
+                    <li><a href="#">Essays</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
+                    <li><a href="#" onclick="javascript:logout()"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
 
         <!-- row 1 --->
         <div class="row" style="margin-top:4px; text-align: center;">
@@ -96,7 +118,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <img style="width:200px;height:200px;border-radius: 25px;border:solid 1px black;" src="images/monocle/clipper.png" alt="Taeping_(clipper,_1863)_-_SLV_H91.325-103(Wikimedia Commons)"/>
+                <img style="width:200px;height:200px;border-radius: 25px;border:solid 1px black;" src="/static/images/monocle/clipper.png" alt="Taeping_(clipper,_1863)_-_SLV_H91.325-103(Wikimedia Commons)"/>
                 <p>
                 <p>
                     The present is always invisible because its environmental. No environment is perceptible, simply because it saturates the whole field of attention. -Marshall McLuhan
@@ -116,7 +138,7 @@
             <div class="col-md-1">
             </div>
             <div class="col-md-6">
-                <img class="layercakeimg" src="images/monocle/layercake.png"/>
+                <img class="layercakeimg" src="/static/images/monocle/layercake.png"/>
                 <p>
                     Always works in small teams.
                 <p>
@@ -136,7 +158,7 @@
             </div>
             <div class="col-md-5">
                 <div >
-                    <img class="watts" src="images/monocle/watts.jpg" />
+                    <img class="watts" src="/static/images/monocle/watts.jpg" />
                 </div>
             </div>
         </div>

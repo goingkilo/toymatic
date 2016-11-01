@@ -1,0 +1,158 @@
+<html>
+<head>
+    <script type="text/javascript" src="/static/js/jquery.js"></script>
+    <link rel="stylesheet" href="/static/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/fonts.css">
+    <script type="text/javascript" src="/static/js/bootstrap.js"></script>
+
+    <script src="/static/js/leaflet.js"></script>
+    <link rel="stylesheet" href="/static/css/leaflet.css" />
+
+    <!--<script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>-->
+    <!--<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />-->
+
+
+    <style>
+        .navbar-brand {
+            color:white;
+        }
+        body {
+            font-family:handwriting;
+        }
+        table {
+            border : solid 1px grey;
+            padding:1px;
+            table-layout: fixed;
+            word-wrap: break-word;
+        }
+        td {
+            /*overflow:auto;*/
+            word-wrap:break-word;
+            word-break:break-word;
+        }
+        .catg{
+            #background-color:lightsalmon;
+            background-color:aliceblue;
+            border:solid 1px lightslategrey;
+            display:block;
+            margin:2px;
+            white-space: normal;
+        }
+        .item-text {
+
+        }
+        .filter {
+            border :solid 1px grey;
+            border-radius: 5px;
+            padding:1px;
+            margin-left:3px;
+        }
+
+        #mapid {
+            height: 380px;
+            border:solid 1px black;
+            padding:5px;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <script>
+
+        $(document).ready(function () {
+            console.log( "## Welcome to the Map world## ");
+
+            // map stuff
+            zoom = 13;
+            city = 0;
+
+            cities = { 'London': [51.5, -0.09] , 'Berlin':[52.5167 , 13.3833], 'Chicago':[41.8819, -87.6278], 'Tokyo':[35.6800, 139.7700]}
+            citylist = ['London','Berlin','Chicago','Tokyo']
+            cityll = [  [51.5, -0.09] , [52.5167 , 13.3833],  [41.8819, -87.6278],  [35.6800, 139.7700]]
+
+            function getcity(){
+                city += 1;
+                city %= cityll.length;
+                console.log( '==>' +cityll[city] );
+                return cityll[city];
+            }
+
+            target = getcity();
+            console.log( 'going to  '+citylist[city]+' (' +cityll[city] +")");
+
+            var map = L.map('mapid').setView( target, 12);
+            L.tileLayer('http://{s}.tiles.mapbox.com/v3/karthikraghu.inhhgekd/{z}/{x}/{y}.png', {
+                attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery � <a href="http://mapbox.com">Mapbox</a>',
+
+                maxZoom: 85
+            }).addTo(map);
+
+            map.on('zoomend', function(e) { console.log( map.getZoom()) } );
+
+            function goto() {
+                city += 1;
+                city %= cityll.length;
+                target = cities[ citylist[city]];
+                map.setView( target, 12);
+                var marker = L.marker( target).addTo(map);
+
+            }
+
+            $('#nextbutton').click( function(x){
+                 goto();
+                $(this).blur();
+            } );
+        });
+
+    </script>
+<!-- nav bar -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Hitman Rental Service, A Division of Evil, Inc</a>
+        </div>
+        <ul class="nav navbar-nav">
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+    </div>
+
+</nav>
+
+<!-- left panel -->
+
+<div class="container-fluid">
+
+    <div class="row">
+
+        <div class="col-sm-4">
+        </div>
+
+        <div class="col-sm-3">
+            <button type="button" class="btn btn-block catg" id="nextbutton" >
+                Cycle
+            </button>
+
+        </div>
+
+        <div class="col-sm-3">
+            <div id="mapid"></div>
+
+        </div>
+
+
+    </div><!-- end row-->
+
+
+</div> <!-- end container-->
+
+</body>
+</html>

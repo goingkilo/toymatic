@@ -1,0 +1,6 @@
+users
+======
+login page (/login) -> enter credentials -> payload page -> logout on payload page -> login page
+
+// login page to be simple . no buttons on the nav bar
+
