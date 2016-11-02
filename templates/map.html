@@ -67,46 +67,57 @@
         $(document).ready(function () {
             console.log( "## Welcome to the Map world## ");
 
-            // map stuff
-            zoom = 13;
-            city = 0;
-
             cities = { 'London': [51.5, -0.09] , 'Berlin':[52.5167 , 13.3833], 'Chicago':[41.8819, -87.6278], 'Tokyo':[35.6800, 139.7700]}
-            citylist = ['London','Berlin','Chicago','Tokyo']
-            cityll = [  [51.5, -0.09] , [52.5167 , 13.3833],  [41.8819, -87.6278],  [35.6800, 139.7700]]
 
-            function getcity(){
-                city += 1;
-                city %= cityll.length;
-                console.log( '==>' +cityll[city] );
-                return cityll[city];
+            var ll  =  {{ coords|safe }};
+
+            var target = cities.London
+            if( ll == undefined || ll == null || ll == ",,,") {
+                console.log( "fallback to London" );
+                target = cities.London;
+            }
+            else {
+                console.log( "ll:" + ll );
+                target = [ll[0],ll[2]];
             }
 
-            target = getcity();
-            console.log( 'going to  '+citylist[city]+' (' +cityll[city] +")");
-
-            var map = L.map('mapid').setView( target, 12);
+            // setup the map
+            var map = L.map('mapid').setView( target, 16);
             L.tileLayer('http://{s}.tiles.mapbox.com/v3/karthikraghu.inhhgekd/{z}/{x}/{y}.png', {
                 attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery � <a href="http://mapbox.com">Mapbox</a>',
-
                 maxZoom: 85
             }).addTo(map);
+            var marker = L.marker( target).addTo(map);
 
-            map.on('zoomend', function(e) { console.log( map.getZoom()) } );
+            // map.on('zoomend', function(e) { console.log( map.getZoom()) } );
 
-            function goto() {
-                city += 1;
-                city %= cityll.length;
-                target = cities[ citylist[city]];
-                map.setView( target, 12);
+            function goto(city) {
+                var target = cities[city];
+                map.setView( target , 12);
                 var marker = L.marker( target).addTo(map);
-
             }
 
-            $('#nextbutton').click( function(x){
-                 goto();
+            $('#London').click( function(x){
+                 goto('London');
+                return;
+            });
+            $('#Chicago').click( function(x){
+                goto('Chicago');
                 $(this).blur();
-            } );
+            });
+            $('#Berlin').click( function(x){
+                goto('Berlin');
+                $(this).blur();
+            });
+            $('#Tokyo').click( function(x){
+                goto('Tokyo');
+                $(this).blur();
+            });
+
+            $('#search').click( function(x){
+
+            });
+
         });
 
     </script>
@@ -114,7 +125,7 @@
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">Hitman Rental Service, A Division of Evil, Inc</a>
+            <a class="navbar-brand" href="#">5 Kilo Maps Ltd</a>
         </div>
         <ul class="nav navbar-nav">
         </ul>
@@ -133,21 +144,29 @@
 
     <div class="row">
 
-        <div class="col-sm-4">
+        <div class="col-sm-2">
         </div>
 
-        <div class="col-sm-3">
-            <button type="button" class="btn btn-block catg" id="nextbutton" >
-                Cycle
-            </button>
-
-        </div>
-
-        <div class="col-sm-3">
+        <div class="col-sm-5">
             <div id="mapid"></div>
-
         </div>
 
+        <div class="col-sm-4">
+            <form  class="form-inline" action="/map" method="POST" >
+                <div class="form-group">
+                    <input type="text" size="45" class="form-control" id="task" name="searchterm">
+                    <button type="submit" class="btn btn-default">Search</button>
+                </div>
+            </form>
+
+
+            <button type="button" class="btn btn-block catg" id="Berlin" >Berlin</button>
+            <button type="button" class="btn btn-block catg" id="London" >London</button>
+            <button type="button" class="btn btn-block catg" id="Tokyo" >Tokyo</button>
+            <button type="button" class="btn btn-block catg" id="Chicago" >Chicago</button>
+        </div>
+        <div class="col-sm-1">
+        </div>
 
     </div><!-- end row-->
 
