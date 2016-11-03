@@ -6,6 +6,10 @@ from flask import render_template
 
 app = Flask(__name__)
 
+#####################################################################
+###################     THINK INSIDE THE BOX      ###################
+#####################################################################
+
 def is_logged_in(request):
     token = request.cookies.get('token')
     if not token:
@@ -15,7 +19,7 @@ def is_logged_in(request):
 def load_user(request):
     token = request.args.get('token')
     if token:
-        username,password = token.split(":") # naive token
+        username,password = token.split(":")
         user_entry = User.get(username)
         if (user_entry is not None):
             user = User(user_entry[0],user_entry[1])
@@ -27,7 +31,6 @@ def load_user(request):
 @app.route("/",methods=["GET"])
 def index():
     if not is_logged_in(request):
-        print '39'
         return render_template('login.html')
     return render_template('index.html')
 
@@ -49,8 +52,7 @@ def do1():
     if request.method == 'POST':
         print 'log in request' ,request.form['email'] or 'None supplied' ,request.form['password'] or 'None supplied'
         user = load_user(request)
-        return login_and_redirect_to('/index.html', "aha@oho.com")
-    print '32'
+        return login_and_redirect_to('/index.html', "user.get_email()")
     return render_template('login.html')
 
 

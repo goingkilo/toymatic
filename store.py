@@ -12,7 +12,9 @@ app = Flask(__name__)
 # login_manager = LoginManager(app)
 # login_manager.init_app(app)
 
-
+#####################################################################
+###################     THINK INSIDE THE BOX      ###################
+#####################################################################
 import pagehelper
 pages = pagehelper.getpages()
 
@@ -30,7 +32,19 @@ def rohn():
 
 @app.route('/stocks')
 def stocks():
-    return render_template('stocks.html')
+    # from  yahoo_finance import Share
+    # import datetime
+    # from datetime import timedelta
+    # today = str(datetime.date.today())
+    # seven_days_ago = str( datetime.date.today() - timedelta( days=7))
+    # boa = Share('BAC')
+    # data = boa.get_historical( seven_days_ago, today)
+    # print data
+    # f = open('stocks.json','w')
+    # json.dump( data, f)
+    # f.close()
+    data = json.load( open( 'stocks.json'))
+    return render_template('stocks.html',data=data)
 
 @app.route('/data')
 def data():
