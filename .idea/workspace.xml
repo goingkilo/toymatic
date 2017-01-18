@@ -2,22 +2,93 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eaf590fe-7386-40c9-85c4-adeb872737e4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json/toymatic_categories.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json/toymatic_products.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/1.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/a.out" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/include/python2.7" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/py/categories.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/py/laptops.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/images" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fk.py" afterPath="$PROJECT_DIR$/t_manager.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.Python" afterPath="$PROJECT_DIR$/.Python" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Procfile" afterPath="$PROJECT_DIR$/Procfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login_register.py" afterPath="$PROJECT_DIR$/login_register.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/paper.html" afterPath="$PROJECT_DIR$/templates/paper.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/store.html" afterPath="$PROJECT_DIR$/templates/store.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/store.py" afterPath="$PROJECT_DIR$/store.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/a.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/categories.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/computer_components_.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/computer_components_t.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/desktops_.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/desktops_t.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/dotd.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/home_improvement_tools_.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/home_improvement_tools_t.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/jewellery_.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/jewellery_t.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/kids_clothing_.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/kids_clothing_t.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/laptop_accessories_.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/mens_clothing_.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/mens_clothing_t.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/music_movies_posters_.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/music_movies_posters_t.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/toys_.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/toys_t.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/tv_video_accessories_.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/tv_video_accessories_t.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/login_register.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/map.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pagehelper.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plan.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rohn.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/fonts.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/images/marker-icon-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/images/marker-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/images/marker-shadow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/images/monocle/a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/images/monocle/clipper.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/images/monocle/clipper.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/images/monocle/layercake.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/images/monocle/layercake_color.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/images/monocle/watts.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/images/white_wall.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/leaflet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/typogridphy.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/d3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/d3.csv_v1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/d3.tsv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/NotFound.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/about.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/logi1n.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/older/capture.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/older/capture_basic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/older/cljlist.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/older/kpaper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/older/monocle.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/older/nohup.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/sample.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/store.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/upload.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/marker-icon-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/marker-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/marker-shadow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/monocle/a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/monocle/clipper.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/monocle/clipper.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/monocle/layercake.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/monocle/layercake_color.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/monocle/watts.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/white_wall.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/biwascheme-0.6.4-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jquery.tablesorter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/leaflet.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/stocks.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/t_manager.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/b_cats.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/bar_graph.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/cats.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/home.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/inventory.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/map.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/paper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/register.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/srohn.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/stocks.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/user.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="retail.iws" />
@@ -70,24 +141,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="store.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="store.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/store.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.625">
+            <state vertical-scroll-proportion="0.75803983">
               <caret line="115" column="91" selection-start-line="115" selection-start-column="91" selection-end-line="115" selection-end-column="91" />
               <folding>
                 <element signature="n#style#0;n#form#0;n#li#0;n#ul#0;n#ul#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Procfile" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Procfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -136,6 +197,7 @@
         <option value="$PROJECT_DIR$/json/toymatic_products.json" />
         <option value="$PROJECT_DIR$/templates/store.html" />
         <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -753,16 +815,16 @@
       <workItem from="1480008284073" duration="80000" />
       <workItem from="1480433733966" duration="460000" />
       <workItem from="1480488103385" duration="1887000" />
-      <workItem from="1484727644775" duration="4114000" />
+      <workItem from="1484727644775" duration="4346000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75352000" />
+    <option name="totallyTimeSpent" value="75584000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -781,7 +843,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20171674" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20171674" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -809,22 +871,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/login_register.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="69" selection-start-line="54" selection-start-column="69" selection-end-line="54" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/store.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -835,40 +881,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/stocks.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/store.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="69" selection-start-line="14" selection-start-column="0" selection-end-line="16" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login_register.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/bar_graph.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="9" selection-start-line="19" selection-start-column="8" selection-end-line="21" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -882,13 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/stocks.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="10" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/store.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -906,14 +915,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/store.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -928,14 +929,6 @@
           <folding>
             <element signature="n#style#0;n#form#0;n#li#0;n#ul#0;n#ul#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -973,13 +966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/srohn.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/store.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -994,13 +980,6 @@
           <folding>
             <element signature="n#style#0;n#form#0;n#li#0;n#ul#0;n#ul#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/srohn.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="122" column="29" selection-start-line="122" selection-start-column="29" selection-end-line="122" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1021,167 +1000,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/srohn.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-33.7451">
-          <caret line="126" column="53" selection-start-line="126" selection-start-column="53" selection-end-line="126" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plan.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/inventory.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/paper.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06891271">
-          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/stocks.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rohn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#84#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login_register.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="44" selection-start-line="26" selection-start-column="4" selection-end-line="27" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cats.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/bar_graph.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="86" column="54" selection-start-line="86" selection-start-column="54" selection-end-line="86" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="9" selection-start-line="13" selection-start-column="8" selection-end-line="16" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/html/store.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.958334">
-          <caret line="82" column="14" selection-start-line="82" selection-start-column="14" selection-end-line="82" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/a.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/json/categories.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27565083">
-          <caret line="0" column="1523" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="18709" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/json/computer_components_.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22970903">
-          <caret line="0" column="1183" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="1577471" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/json/toymatic_categories.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.25">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/t_manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2437223">
-          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -1202,21 +1024,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/store.html">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.625">
-          <caret line="115" column="91" selection-start-line="115" selection-start-column="91" selection-end-line="115" selection-end-column="91" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#li#0;n#ul#0;n#ul#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.046153847">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/store.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75803983">
+          <caret line="115" column="91" selection-start-line="115" selection-start-column="91" selection-end-line="115" selection-end-column="91" />
+          <folding>
+            <element signature="n#style#0;n#form#0;n#li#0;n#ul#0;n#ul#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
