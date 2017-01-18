@@ -2,94 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eaf590fe-7386-40c9-85c4-adeb872737e4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/a.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/categories.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/computer_components_.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/computer_components_t.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/desktops_.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/desktops_t.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/dotd.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/home_improvement_tools_.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/home_improvement_tools_t.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/jewellery_.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/jewellery_t.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/kids_clothing_.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/kids_clothing_t.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/laptop_accessories_.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/mens_clothing_.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/mens_clothing_t.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/music_movies_posters_.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/music_movies_posters_t.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/toys_.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/toys_t.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/tv_video_accessories_.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/tv_video_accessories_t.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/login_register.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/map.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pagehelper.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plan.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rohn.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/fonts.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/images/marker-icon-2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/images/marker-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/images/marker-shadow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/images/monocle/a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/images/monocle/clipper.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/images/monocle/clipper.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/images/monocle/layercake.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/images/monocle/layercake_color.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/images/monocle/watts.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/images/white_wall.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/leaflet.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/typogridphy.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/d3.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/d3.csv_v1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/d3.tsv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/NotFound.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/about.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/logi1n.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/older/capture.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/older/capture_basic.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/older/cljlist.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/older/kpaper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/older/monocle.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/older/nohup.out" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/sample.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/store.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/html/upload.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/marker-icon-2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/marker-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/marker-shadow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/monocle/a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/monocle/clipper.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/monocle/clipper.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/monocle/layercake.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/monocle/layercake_color.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/monocle/watts.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/white_wall.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/biwascheme-0.6.4-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jquery.tablesorter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/leaflet.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/stocks.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/t_manager.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/b_cats.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/bar_graph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/cats.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/home.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/inventory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/map.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/paper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/register.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/srohn.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/stocks.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/user.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Procfile" afterPath="$PROJECT_DIR$/Procfile" />
     </list>
     <ignored path="retail.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -141,14 +54,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="store.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="store.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/store.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75803983">
+            <state vertical-scroll-proportion="-20.625">
               <caret line="115" column="91" selection-start-line="115" selection-start-column="91" selection-end-line="115" selection-end-column="91" />
               <folding>
                 <element signature="n#style#0;n#form#0;n#li#0;n#ul#0;n#ul#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Procfile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Procfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -196,8 +119,8 @@
         <option value="$PROJECT_DIR$/store.py" />
         <option value="$PROJECT_DIR$/json/toymatic_products.json" />
         <option value="$PROJECT_DIR$/templates/store.html" />
-        <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Procfile" />
       </list>
     </option>
   </component>
@@ -815,16 +738,16 @@
       <workItem from="1480008284073" duration="80000" />
       <workItem from="1480433733966" duration="460000" />
       <workItem from="1480488103385" duration="1887000" />
-      <workItem from="1484727644775" duration="4346000" />
+      <workItem from="1484727644775" duration="4528000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75584000" />
+    <option name="totallyTimeSpent" value="75766000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -843,7 +766,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20171674" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20171674" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1032,21 +955,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/store.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75803983">
+        <state vertical-scroll-proportion="-20.625">
           <caret line="115" column="91" selection-start-line="115" selection-start-column="91" selection-end-line="115" selection-end-column="91" />
           <folding>
             <element signature="n#style#0;n#form#0;n#li#0;n#ul#0;n#ul#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>

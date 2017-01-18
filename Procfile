@@ -1,1 +1,1 @@
-web: gunicorn toymatic:app --log-file -
+web: gunicorn store:app --log-file -
