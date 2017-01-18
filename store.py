@@ -5,12 +5,12 @@ import json
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/paper")
 def index():
     return render_template('paper.html')
 
 
-@app.route("/store")
+@app.route("/")
 def store():
     prods = json.load( open( './json/toymatic_products.json'))
     cats = json.load( open( './json/toymatic_categories.json'))
