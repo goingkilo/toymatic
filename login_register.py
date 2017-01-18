@@ -10,12 +10,6 @@ app = Flask(__name__)
 ###################     THINK INSIDE THE BOX      ###################
 #####################################################################
 
-def is_logged_in(request):
-    token = request.cookies.get('token')
-    if not token:
-        return False
-    return True
-
 def load_user(request):
     token = request.args.get('token')
     if token:
@@ -33,6 +27,12 @@ def index():
     if not is_logged_in(request):
         return render_template('login.html')
     return render_template('index.html')
+
+def is_logged_in(request):
+    token = request.cookies.get('token')
+    if not token:
+        return False
+    return True
 
 @app.route("/logout")
 def logout():
