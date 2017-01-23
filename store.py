@@ -14,7 +14,6 @@ def index():
 def store():
     prods = json.load( open( './json/toymatic_products.json'))
     cats = json.load( open( './json/toymatic_categories.json'))
-    print json.dumps(prods, indent=4)
     return render_template('index.html',categories=cats,products=prods )
 
 
