@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'newspaper';
+    src: url('../fonts/OldNewspaperTypes.ttf') format('truetype');;
+}
+@font-face {
+    font-family: 'handwriting';
+    src: url('../fonts/typeo___.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'typewriter';
+    src: url('../fonts/Essays1743.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'quickhand';
+    src: url('../fonts/Quikhand.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'simple_joys';
+    src: url('../fonts/simple_joys.ttf') format('truetype');
+}
