@@ -1,13 +1,10 @@
 
 from flask import Flask,session, redirect, url_for, escape, request,Response,jsonify
 from flask import render_template
+from flask_session import Session
 
 import json
 
-from flask import Flask,session, redirect, url_for, escape, request,Response,jsonify
-from flask import render_template
-
-import json
 
 app = Flask(__name__)
 
@@ -44,6 +41,9 @@ def addToCart():
 
 if __name__ == "__main__":
     app.secret_key = 'super secret key'
+    app.config['SESSION_TYPE'] = 'filesystem'
+    sess = Session()
+    sess.init_app(app)
     app.debug = True
     app.run()
 
