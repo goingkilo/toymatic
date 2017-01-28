@@ -1,7 +1,7 @@
 [
- [
-   {
-    "desc":"Lego toy truck kit !",
+  {
+    "id":"1",
+    "desc":"Lego toy truck kit ! description this is ha ha ha",
     "title":"Lego toy truck kit !",
     "url":"",
     "price":"0.00",
@@ -9,6 +9,7 @@
     "category":""
   },
   {
+    "id":"2",
     "desc":"RC Hummer",
     "title":"RC Hummer",
     "url":"",
@@ -17,16 +18,16 @@
     "category":""
   },
   {
+    "id":"3",
     "desc":"Baby Animal Pop-up",
     "title":"Baby Animal Pop-up",
     "url":"",
     "price":"0.00",
     "image":"/static/images/3.jpg",
     "category":""
-  }
- ],
- [
+  },
   {
+    "id":"4",
     "desc":"Baby iPad  ",
     "title":"Baby iPad  ",
     "url":"",
@@ -35,6 +36,7 @@
     "category":""
   },
   {
+    "id":"5",
     "desc":"Poker set ! Not for kids",
     "title":"Poker set ! Not for kids",
     "url":"",
@@ -43,16 +45,16 @@
     "category":""
   },
   {
+    "id":"6",
     "desc":"Baby Jeep",
     "title":"Baby Jeep",
     "url":"",
     "price":"0.00",
     "image":"/static/images/6.jpg",
     "category":""
-  }
- ],
-  [
+  },
   {
+    "id":"7",
     "desc":"Elephant walker for baby",
     "title":"Elephant walker for baby",
     "url":"",
@@ -61,6 +63,7 @@
     "category":""
   },
   {
+    "id":"8",
     "desc":"Water-wow-second-dow-third-cow!!",
     "title":"Water wow!!",
     "url":"",
@@ -68,5 +71,4 @@
     "image":"/static/images/8.jpg",
     "category":""
   }
-]
 ]
