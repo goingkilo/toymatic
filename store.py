@@ -3,7 +3,7 @@ from flask import Flask,session, redirect, url_for, escape, request,Response,jso
 from flask import render_template
 from flask_session import Session
 
-import json
+import json,os
 
 
 app = Flask(__name__)
@@ -40,7 +40,7 @@ def addToCart():
     return render_template('3colportfolio.html', prods = b, count = c )
 
 if __name__ == "__main__":
-    app.secret_key = 'super secret key'
+    app.secret_key = os.urandom(24)
     app.config['SESSION_TYPE'] = 'filesystem'
     sess = Session()
     sess.init_app(app)
