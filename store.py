@@ -1,7 +1,7 @@
 
 from flask import Flask,session, redirect, url_for, escape, request,Response,jsonify
 from flask import render_template
-from flask_session import Session
+#from flask_session import Session
 from redis_session import RedisSessionInterface
 import json,os,redis
 
@@ -75,14 +75,10 @@ if __name__ == "__main__":
     app.secret_key = os.urandom(24)
 
     #redis sessions
-    connection_string  = os.environ.get('REDIS_URL')
-    if connection_string:
-        r = redis.from_url(connection_string)
-        app.session_interface = RedisSessionInterface(redis=r)
-    else:
-        app.session_interface = RedisSessionInterface()
-
-    app.session_interface = RedisSessionInterface()
+    connection_string  = os.environ.get('REDIS_URL','redis://localhost:6379')
+    r = redis.from_url(connection_string)
+    print 'connectint to redis', r
+    app.session_interface = RedisSessionInterface(redis=r)
     #app.config['SESSION_TYPE'] = 'filesystem'
     #sess = Session()
     #sess.init_app(app)
