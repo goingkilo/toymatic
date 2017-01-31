@@ -12,15 +12,7 @@
         <title>Toymatic Toy Rentals</title>
 
         <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-
         <link href="/static/css/3-col-portfolio.css" rel="stylesheet">
-
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
 
         <script src="/static/js/jquery.js"></script>
         <script src="/static/js/bootstrap.min.js"></script>
@@ -34,6 +26,8 @@
         <script>
             $(document).ready( function() {
                 console.log( " ** Welcome to Toymatic (TM). Copyright 2017 *** ");
+
+                $('.pagina').hide();
 
                 $('button').click( function() {
                     $.ajax({
@@ -115,12 +109,13 @@
             {% for p in  p3 %}
 
             <div class="col-md-4 portfolio-item k-border">
-                <a href="#">
+                <a href="/item?id={{p.id}}">
                     <img class="img-responsive" src="{{p.image}}" alt="" title="{{p.title}}">
-                    <button class="btn btn-default pull-right"  id="{{p.id}}">
-                        Rent me !
-                    </button>
+
                 </a>
+                <button class="btn btn-default pull-right"  id="{{p.id}}">
+                    Rent me !
+                </button>
                 <h3>
                     <a href="/item?id={{p.id}}">{{p.title}}</a>
                 </h3>
@@ -137,7 +132,7 @@
         <hr>
 
         <!-- Pagination -->
-        <div class="row text-center">
+        <div class="row text-center pagina">
             <div class="col-lg-12">
                 <ul class="pagination">
                     <li>
@@ -172,7 +167,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; Toymatic 2017</p>
                 </div>
             </div>
             <!-- /.row -->
