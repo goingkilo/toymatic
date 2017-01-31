@@ -7,19 +7,32 @@ import json,os,redis
 
 from shopping_cart import Cart
 
+
+# --- --- --- --- --- --- --- --- --- --- ---
 app = Flask(__name__)
 
 connection_string  = os.environ.get('REDIS_URL','redis://localhost:6379')
 r = redis.from_url(connection_string)
 print 'connectint to redis', r
 
+app.secret_key = os.urandom(24)
+
+#redis sessions
+app.session_interface = RedisSessionInterface(redis=r)
+#app.config['SESSION_TYPE'] = 'filesystem'
+#sess = Session()
+#sess.init_app(app)
+
+app.debug = True
+# --- --- --- --- --- --- --- --- --- --- ---
+
+
 @app.route("/paper")
 def paper():
     return render_template('paper.html')
 
 @app.route( "/", methods=['GET', 'POST'])
-def homeinve():
-    p = products(3);
+def home():
     if request.method == 'POST':
         cart = session.get( 'cart', Cart() )
         print 'x',cart
@@ -31,17 +44,19 @@ def homeinve():
         session[ 'cart'] = cart
 
         return "OK"
-    cart = session.get( 'cart', Cart() )
-    print cart.items
-    return render_template('home.html', prods = p, count=cart.get_item_count())
+    else:
+        p = products(3);
+        cart = session.get( 'cart', Cart() )
+        print cart.items
+        return render_template('home.html', prods = p, count=cart.get_item_count())
 
 @app.route("/item")
 def item():
-    p = products(0)
+    all_products = products(0)
     item_id = request.args.get('id')
-    p1 = filter( lambda x : x['id'] == str(item_id) , p)
-    item_count = session.get( 'item-count',0)
-    return  render_template('item.html', p=p1[0] , count=item_count)
+    prduct = filter( lambda x : x['id'] == str(item_id) , all_products)
+    cart = session.get( 'cart',Cart())
+    return  render_template('item.html', p=prduct[0] , count=cart.get_item_count())
 
 @app.route("/cart/delete")
 def rem_item():
@@ -56,7 +71,9 @@ def rem_item():
 def checkout():
     cart = session.get('cart', None)
     ret = []
-    if cart:
+    if not cart:
+        return  render_template('checkout.html', products=ret, count=0)
+    else:
         items = cart.get_items()
         p = products(0)
 
@@ -64,7 +81,7 @@ def checkout():
             p1 = filter( lambda x : x['id'] == str(i) , p)
             ret.append(p1[0])
 
-    return  render_template('checkout.html', products=ret, count=cart.get_item_count() or 0)
+        return  render_template('checkout.html', products=ret, count=cart.get_item_count() or 0)
 
 def products(batch_size=1):
     a = json.load( open( './json/toymatic_products.json'))
@@ -74,14 +91,5 @@ def products(batch_size=1):
     return b
 
 if __name__ == "__main__":
-    app.secret_key = os.urandom(24)
-
-    #redis sessions
-
-    app.session_interface = RedisSessionInterface(redis=r)
-    #app.config['SESSION_TYPE'] = 'filesystem'
-    #sess = Session()
-    #sess.init_app(app)
-    app.debug = True
     app.run()
 
