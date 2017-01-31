@@ -9,6 +9,9 @@ from shopping_cart import Cart
 
 app = Flask(__name__)
 
+connection_string  = os.environ.get('REDIS_URL','redis://localhost:6379')
+r = redis.from_url(connection_string)
+print 'connectint to redis', r
 
 @app.route("/paper")
 def paper():
@@ -16,7 +19,6 @@ def paper():
 
 @app.route( "/", methods=['GET', 'POST'])
 def homeinve():
-
     p = products(3);
     if request.method == 'POST':
         cart = session.get( 'cart', Cart() )
@@ -75,9 +77,7 @@ if __name__ == "__main__":
     app.secret_key = os.urandom(24)
 
     #redis sessions
-    connection_string  = os.environ.get('REDIS_URL','redis://localhost:6379')
-    r = redis.from_url(connection_string)
-    print 'connectint to redis', r
+
     app.session_interface = RedisSessionInterface(redis=r)
     #app.config['SESSION_TYPE'] = 'filesystem'
     #sess = Session()
