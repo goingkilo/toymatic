@@ -54,16 +54,13 @@
                     var phone = $('#phone').val();
                     if( email == '' &&  phone == '') {
                         $('#flasher').html('<span style="color:red">Please provide an email id or a phone number</span>');
+                        e.preventDefault();
                     }
                     else {
-                        console.log('>' + email + "/" + phone);
-                        //alert("Thanks for checking us out. We have your contact information. We'll reach out to you soon!");
-                        document.location = '/';
+                        alert("Thanks for checking us out. We have your contact information. We'll reach out to you soon!");
+                        $('#item').val( $('#email').val());
                     }
-                    e.preventDefault();
-
                 });
-
 
             });
 
@@ -117,7 +114,6 @@
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
-
         </div>
         <!-- /.container -->
     </nav>
@@ -177,25 +173,29 @@
             <div class="col-md-5 portfolio-item k-border">
                 <h3> Checkout </h3> <h5> Please provide a phone number or email and we will get back to you shortly</h5>
                 <div id="flasher"></div>
-                <form class="form-horizontal">
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="email">Email:</label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" id="email" placeholder="Enter email">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="phone">Phone number:</label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" id="phone" placeholder="Enter phone number">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="pwd"> Plan</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="pwd" value="Current plan 3-M-1-T">
-                        </div>
-                    </div>
+                <form class="form-horizontal" action="/mail" method="post">
+
+                    <!--<div class="form-group">-->
+                        <!--<label class="control-label col-sm-2" >Email or Phone</label>-->
+                        <!--<div class="col-sm-10">-->
+                            <input type="email" class="form-control" id="email" placeholder="Enter email or phone number">
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="form-group">-->
+                        <!--<label class="control-label col-sm-2" for="phone">Phone number:</label>-->
+                        <!--<div class="col-sm-10">-->
+                            <!--<input type="email" class="form-control" id="phone" placeholder="Enter phone number">-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="form-group">-->
+                        <!--<label class="control-label col-sm-2" > Plan</label>-->
+                        <!--<div class="col-sm-10">-->
+                            <!--<input type="text" class="form-control" id="plan" value="Current plan 3-M-1-T">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <input type="hidden" id="item" name="item" value="">
 
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">

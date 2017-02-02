@@ -1,15 +1,16 @@
 
-from flask import Flask, session, redirect, url_for, escape, request,Response,jsonify
+import json,os,redis
+
+from flask import Flask, session, redirect, url_for, escape, request,Response,jsonify,flash
 from flask import render_template
 #from flask_session import Session
 from redis_session import RedisSessionInterface
-import json,os,redis
+
 from shopping_cart import Cart
 
 from flask_login import LoginManager,login_required,login_user,UserMixin,logout_user
-
-from flask import Flask,flash
 from flask_bcrypt import Bcrypt
+from flask_mail import Mail, Message
 
 # --- --- --- --- --- --- APP STUFF  --- --- --- --- ---
 app = Flask(__name__)
@@ -35,7 +36,17 @@ login_manager.login_view = "login"
 bcrypt = Bcrypt(app)
 
 r.set('user_a@b.c', bcrypt.generate_password_hash('hunter2'))
-# --- --- --- --- --- --- --- --- --- --- ---
+
+# --- --- --- --- --- --- MAIL STUFF  --- --- --- --- ---
+mail = Mail()
+app.config['MAIL_SERVER']='smtp.gmail.com'
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USERNAME'] = 'goingkilo@gmail.com'
+app.config['MAIL_PASSWORD'] = 'Erumai1!'
+app.config['MAIL_USE_TLS'] = False
+app.config['MAIL_USE_SSL'] = True
+mail.init_app(app)
+
 
 @app.route("/paper")
 def paper():
@@ -45,7 +56,6 @@ def paper():
 def home():
     if request.method == 'POST':
         cart = session.get( 'cart', Cart() )
-        print 'x',cart
         item_id = request.form['item-id']
 
         if item_id:
@@ -91,7 +101,7 @@ def checkout():
             p1 = filter( lambda x : x['id'] == str(i) , p)
             ret.append(p1[0])
 
-        return  render_template('checkout.html', products=ret, count=cart.get_item_count() or 0)
+        return  render_template('checkout.html', products=ret, count=cart.get_item_count())
 
 def products(batch_size=1):
     a = json.load( open( './json/toymatic_products.json'))
@@ -99,6 +109,24 @@ def products(batch_size=1):
         return a
     b = [a[x:x+batch_size] for x in xrange(0, len(a), batch_size)]
     return b
+
+
+## -------------- mail stuff ---------
+
+@app.route("/mail", methods=['POST'])
+def send():
+    print 1
+    if request.method == 'POST':
+        print 2,request.form
+        item = request.form['item']
+        print 3
+        msg = Message( "Toymatic !!", sender=('Toymatic Corp',"site-admin@toymatic.in"), recipients=['pavithra.ramesh@gmail.com'])
+        msg.body = " This person has reached out " + item + " "
+        print 4
+        mail.send(msg)
+    print 5
+    return redirect(url_for('home'))
+
 
 ## -------------- auth stuff ---------
 
