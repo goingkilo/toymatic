@@ -18,7 +18,7 @@ class Cart:
         if self.items:
             if item_id in self.items:
                 self.items.remove(item_id)
-        return item_id
+            return item_id
 
 
 

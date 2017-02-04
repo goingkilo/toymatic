@@ -32,7 +32,7 @@
                 $('button').click( function() {
                     $.ajax({
                         type: "POST",
-                        url: '/',
+                        url: '/cart/add',
                         data: {
                             "item-id":this.id
                         },
@@ -40,6 +40,7 @@
                             //window.location.reload();
                             console.log(x);
                             $('#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right > li > a > span.badge.label-success').text(x);
+                            return;
                         }
                     });
                 });
@@ -83,15 +84,15 @@
                             <span class="glyphicon glyphicon-shopping-cart">
                             </span><span class="badge label-success"> {{count}}</span></a>
                     </li>
-                    <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a></li>-->
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Guest
-                            <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/user/home">Your Account</a></li>
-                            <li><a href="/logout">Logout</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Guest </a></li>
+                    <!--<li class="dropdown">-->
+                        <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Guest-->
+                            <!--<span class="caret"></span></a>-->
+                        <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="/user/home">Your Account</a></li>-->
+                            <!--<li><a href="/logout">Logout</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -132,7 +133,7 @@
                 </h3>
                 <p>
                     {{p.desc}}
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, fixed width see more tooltip
+
                 </p>
             </div>
 
