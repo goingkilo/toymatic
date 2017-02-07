@@ -86,9 +86,7 @@
                 <li>
                     <a href="#">How it works</a>
                 </li>
-                <li>
-                    <a href="#">Memberships </a>
-                </li>
+                <!--<li><a href="#">Memberships </a></li>-->
                 <li>
                     <a href="#">Contact</a>
                 </li>
@@ -168,10 +166,10 @@
                             <td>{{p.title}}</td>
                             <td>
                                 <h1></h1>
-                                <div style="vertical-align:bottom">
-                                    <a href="/cart/delete?item_id={{p.id}}">Delete</a>
-                                    &nbsp
-                                    <a href="/cart/wish?id=">Add to wishlist</a>
+                                <div style="vertical-align:bottom" class="pull-right">
+                                    <a href="/cart/delete?item_id={{p.id}}">  <span class="glyphicon glyphicon-remove"></span></a>
+                                    <!--&nbsp <a href="/cart/wish?id=">Add to wishlist</a>-->
+
                                 </div>
                             </td>
 

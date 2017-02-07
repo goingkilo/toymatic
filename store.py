@@ -1,26 +1,24 @@
 
 import json,os,redis
 from flask import Flask, session, redirect, url_for, escape, request,Response,jsonify,flash,render_template
-from redis_session import RedisSessionInterface
+
 from shopping_cart import Cart
-from flask_mail import Mail, Message
+from flask_mail import Mail
 
 # --- --- --- --- --- --- APP STUFF  --- --- --- --- ---
 app = Flask(__name__)
+app.secret_key = os.urandom(24)
+app.debug = True
 
 # --- --- --- --- --- --- REDIS STUFF  --- --- --- --- ---
+from redis_session import RedisSessionInterface
+
 connection_string  = os.environ.get('REDIS_URL','redis://localhost:6379')
 r = redis.from_url(connection_string)
-
-app.secret_key = os.urandom(24)
-
-#redis sessions
 app.session_interface = RedisSessionInterface(redis=r)
 #app.config['SESSION_TYPE'] = 'filesystem'
 #sess = Session()
 #sess.init_app(app)
-
-app.debug = True
 
 # --- --- --- --- --- --- MAIL STUFF  --- --- --- --- ---
 mail = Mail()
@@ -32,18 +30,13 @@ app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail.init_app(app)
 
-
-
-from paper import paper_blueprint
 from mailer import mailer_blueprint
 
-app.register_blueprint( paper_blueprint)
 app.register_blueprint( mailer_blueprint)
-
 
 @app.route( "/", methods=['GET', 'POST'])
 def home():
-    p = products(3);
+    p = products(4);
     cart = session.get( 'cart', Cart() )
     #print 'cart items', cart.items
     return render_template('home.html', prods = p, count=cart.get_item_count(), user='a@b.c')

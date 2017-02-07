@@ -1,10 +1,10 @@
 import pickle
-from datetime import timedelta
 from uuid import uuid4
 from redis import Redis
 from werkzeug.datastructures import CallbackDict
 from flask.sessions import SessionInterface, SessionMixin
 
+from datetime import timedelta
 
 class RedisSession(CallbackDict, SessionMixin):
 

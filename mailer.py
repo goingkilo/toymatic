@@ -12,14 +12,11 @@ def send():
     print 'sending mail'
     if request.method == 'POST':
         from store import mail
-        print 2,request.form
         email = request.form['email']
         phone = request.form['phone']
         choice = request.form['optradio']
-        print 3
         msg = Message( "Toymatic !!", sender=('Toymatic Corp',"site-admin@toymatic.in"), recipients=['yesbob@gmail.com','pavithra.ramesh@gmail.com'])
         msg.body = "" + email + " / " + phone + "/ toy:" + choice
-        print 4
         cart = session.get('cart', Cart())
         cart.remove_item( choice)
         session['cart'] = cart
