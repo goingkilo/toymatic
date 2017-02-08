@@ -1,17 +1,15 @@
 
-from flask import render_template, Blueprint,request, redirect, url_for, session
-from flask_mail import Mail, Message
-from shopping_cart import  Cart
+from flask import Blueprint,request, redirect, url_for, session
+from flask_mail import Message
+from module.store import  Cart
 
 
-mailer_blueprint = Blueprint( 'mailer', __name__,url_prefix='/mail')
+mailer_blueprint = Blueprint( 'mailer', __name__,url_prefix='/mailer')
 
-#@app.route("/mail", methods=['POST'])
-@mailer_blueprint.route("/", methods=['POST'])
+@mailer_blueprint.route("/mail", methods=['POST'])
 def send():
     print 'sending mail'
     if request.method == 'POST':
-        from store import mail
         email = request.form['email']
         phone = request.form['phone']
         choice = request.form['optradio']
@@ -22,5 +20,5 @@ def send():
         session['cart'] = cart
         #mail.send(msg)
     print 5
-    return redirect(url_for('home'))
+    return redirect(url_for('storefront.home'))
 

@@ -34,7 +34,7 @@
 
                 $.ajax({
                     type: "POST",
-                    url: '/cart/add',
+                    url: '/store/cart/add',
                     data: {
                         "item-id":this.id
                     },
@@ -66,7 +66,7 @@
                 <span class="icon-bar">b</span>
                 <span class="icon-bar">c</span>
             </button>
-            <a class="navbar-brand" href="/">Home</a>
+            <a class="navbar-brand" href="/store/home">Home</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -81,7 +81,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="/checkout">My Cart
+                    <a href="/store/checkout">My Cart
                             <span class="glyphicon glyphicon-shopping-cart">
                             </span><span class="badge label-success"> {{count}}</span></a>
                 </li>
@@ -132,8 +132,12 @@
                 <li>
                     <button class="btn btn-info a1"  id="{{p.amazon_link}}">Buy me on Amazon</button>
                 </li>
+                {% if p.ages %}
                 <li>For ages {{p.ages}} </li>
+                {% endif %}
+                {% if p.develops %}
                 <li>Develops : {{p.develops}}</li>
+                {% endif %}
             </ul>
         </div>
 

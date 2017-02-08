@@ -59,7 +59,7 @@
                 $('button').click( function() {
                     $.ajax({
                         type: "POST",
-                        url: '/cart/add',
+                        url: '/store/cart/add',
                         data: {
                             "item-id":this.id
                         },
@@ -91,7 +91,7 @@
                     <span class="icon-bar">b</span>
                     <span class="icon-bar">c</span>
                 </button>
-                <a class="navbar-brand" href="/">Home</a>
+                <a class="navbar-brand" href="/store/home">Home</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -106,7 +106,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="/checkout">My Cart
+                        <a href="/store/checkout">My Cart
                             <span class="glyphicon glyphicon-shopping-cart">
                             </span><span class="badge label-success"> {{count}}</span></a>
                     </li>
@@ -150,7 +150,7 @@
             <div class="col-md-3 portfolio-item k-border">
 
                 <div class="toy-tile">
-                    <a href="/item?id={{p.id}}">
+                    <a href="/store/item?id={{p.id}}">
                         <img class="img-responsive" src="{{p.image}}" alt="">
                     </a>
 

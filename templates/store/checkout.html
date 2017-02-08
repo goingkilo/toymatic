@@ -36,7 +36,7 @@
 
             $('#go_home').click(function(x){
                 e.preventDefault();
-                document.location = '/';
+                document.location = '/store/home';
             });
 
             $('#checkout').click(function(e){
@@ -79,7 +79,7 @@
                 <span class="icon-bar">b</span>
                 <span class="icon-bar">c</span>
             </button>
-            <a class="navbar-brand" href="/">Home</a>
+            <a class="navbar-brand" href="/store/home">Home</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -94,7 +94,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="/checkout">My Cart
+                    <a href="/store/checkout">My Cart
                             <span class="glyphicon glyphicon-shopping-cart">
                             </span><span class="badge label-success"> {{count}}</span></a>
                 </li>
@@ -142,7 +142,7 @@
         </div>
 
         <div class="col-md-10 portfolio-item k-border">
-            <form class="form-horizontal" action="/mail/" method="POST">
+            <form class="form-horizontal" action="/mailer/mail" method="POST">
 
                 <div class="pull-left">
                     {% set checkedu = False %}
@@ -162,12 +162,12 @@
                                     </label>
                                 </div>
                             </td>
-                            <td><a href="/item?id={{p.id}}"><img src="{{p.image}}"></a></td>
-                            <td><a href="/item?id={{p.id}}"><img src="{{p.image}}">{{p.title}}</a></td>
+                            <td><a href="/store/item?id={{p.id}}"><img src="{{p.image}}"></a></td>
+                            <td><a href="/store/item?id={{p.id}}">{{p.title}}</a></td>
                             <td>
                                 <h1></h1>
                                 <div style="vertical-align:bottom" class="pull-right">
-                                    <a href="/cart/delete?item_id={{p.id}}">  <span class="glyphicon glyphicon-remove"></span></a>
+                                    <a href="/store/cart/delete?item_id={{p.id}}">  <span class="glyphicon glyphicon-remove"></span></a>
                                     <!--&nbsp <a href="/cart/wish?id=">Add to wishlist</a>-->
 
                                 </div>
@@ -180,7 +180,7 @@
                     {% else %}
                     <h4> Your cart is empty ...   </h4>
                     <!--<button class="btn btn-default" id="go_home">Browse more toys</button>-->
-                    <a href="/"><h4>Browse more toys</h4></a>
+                    <a href="/store/home"><h4>Browse more toys</h4></a>
 
                     {% endif %}
                 </div>
