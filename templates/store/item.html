@@ -25,12 +25,15 @@
         .a1 {
             margin:1px;
         }
+        .a2 {
+            margin:1px;
+        }
     </style>
     <script>
         $(document).ready( function() {
             console.log( " ** Welcome to Toymatic (TM). Copyright 2017 *** ");
 
-            $('button').click( function() {
+            $('.a1').click( function() {
 
                 $.ajax({
                     type: "POST",
@@ -50,9 +53,7 @@
 
     </script>
 
-
 </head>
-
 <body>
 
 <!-- Navigation -->
@@ -130,7 +131,7 @@
                     <button class="btn btn-info a1"  id="{{p.id}}">Rent me !</button>
                 </li>
                 <li>
-                    <button class="btn btn-info a1"  id="{{p.amazon_link}}">Buy me on Amazon</button>
+                    <button class="btn btn-info a2"  id="{{p.amazon_link}}">Buy me on Amazon</button>
                 </li>
                 {% if p.ages %}
                 <li>For ages {{p.ages}} </li>

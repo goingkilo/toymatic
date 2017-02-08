@@ -52,9 +52,11 @@ app.register_blueprint( paper_blueprint)
 from module.dbish import  dbish_blueprint
 app.register_blueprint( dbish_blueprint)
 
+"""
+# UNCOMMENT FOR CSRF PROTECTION. WARNING - FORMS WON'T WORK NO MO
 @app.before_request
 def csrf_protect():
-    if request.method == "POST":
+    if request.method == "POST" and request.path != '/inventory/upload':
         token = session.pop('_csrf_token', None)
         if not token or token != request.form.get('_csrf_token'):
             abort(403)
@@ -65,12 +67,11 @@ def generate_csrf_token():
     return session['_csrf_token']
 
 app.jinja_env.globals['csrf_token'] = generate_csrf_token
+"""
 
 @app.route('/')
 def index():
     return redirect( url_for( 'storefront.home'))
-
-
 
 if __name__ == "__main__":
     app.run()

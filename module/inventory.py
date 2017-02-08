@@ -2,19 +2,22 @@
 from flask import render_template, Blueprint,request, redirect, url_for, session
 
 
-inventory_blueprint = Blueprint( 'inventory', __name__,url_prefix='/store')
+inventory_blueprint = Blueprint( 'inventory', __name__,url_prefix='/inventory')
 
-@inventory_blueprint.route("/", methods=['GET','POST'])
+@inventory_blueprint.route("/upload", methods=['GET','POST'])
 def stores():
     if request.method == 'POST':
         data = request.form['data']
         from app import r
         r.set( 'toys', data)
     #json = open('./json/toymatic_products.json').read()
+    return '200'
 
-        return '200'
-
-
+@inventory_blueprint.route("/get")
+def get():
+    import json
+    from app import r
+    return  json.dumps(json.loads(r.get('toys')),indent=4)
 
 def parse_csv( a, b):
     with open( a, 'rb') as f:
