@@ -1,0 +1,145 @@
+<html>
+<head>
+    <script type="text/javascript" src="/static/js/jquery.js"></script>
+    <link rel="stylesheet" href="/static/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/fonts.css">
+    <script type="text/javascript" src="/static/js/bootstrap.js"></script>
+
+    <script src="/static/js/leaflet.js"></script>
+    <link rel="stylesheet" href="/static/css/leaflet.css" />
+
+    <!--<script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>-->
+    <!--<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />-->
+
+    <link rel='shortcut icon' href='/static/images/favicon.ico' type='image/x-icon'/ >
+
+    <style>
+        body {
+            font-family: newspaper;
+        }
+        h1  {
+            font-family: typewriter;
+        }
+        .navbar-brand {
+            color:white;
+        }
+
+        table {
+            border : solid 1px grey;
+            padding:1px;
+            table-layout: fixed;
+            word-wrap: break-word;
+        }
+
+        td {
+            /*overflow:auto;*/
+            word-wrap:break-word;
+            word-break:break-word;
+        }
+
+        .catg{
+            #background-color:lightsalmon;
+            background-color:aliceblue;
+            border:solid 1px lightslategrey;
+            display:block;
+            margin:2px;
+            white-space: normal;
+        }
+
+        .item-text {
+        }
+
+        .filter {
+            border :solid 1px grey;
+            border-radius: 5px;
+            padding:1px;
+            margin-left:3px;
+        }
+
+        #mapid {
+            height: 380px;
+            border:solid 1px black;
+            padding:5px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <script>
+
+        $(document).ready(function () {
+            console.log( "## Welcome to the Map world## ");
+
+            var ll  =  [12.9716, 77.5946 ]
+
+            console.log( ll);
+
+            // setup the map
+            var map = L.map('mapid').setView( ll, 16);
+            L.tileLayer('http://{s}.tiles.mapbox.com/v3/karthikraghu.inhhgekd/{z}/{x}/{y}.png', {
+                attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery � <a href="http://mapbox.com">Mapbox</a>',
+                maxZoom: 85
+            }).addTo(map);
+
+            // map.on('zoomend', function(e) { console.log( map.getZoom()) } );
+
+            function put_marker_at(pos) {
+                map.setView( pos , 12);
+                var marker = L.marker( pos).addTo(map);
+            }
+
+            put_marker_at(ll);
+
+        });
+
+    </script>
+    <section>
+        <div class="container">
+
+            <!-- nav bar -->
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">5 Kilo Adventures Ltd</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/paper/home">News</a></li>
+                        <li><a href="/paper/stocks">Stocks</a></li>
+                        <li><a href="/paper/map">Maps</a></li>
+                        <li><a href="/paper/essays">Essays</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-sm-3"></div>
+
+                    <div class="col-sm-6">
+                        <div id="mapid"></div>
+                    </div>
+
+                    <div class="col-sm-3"></div>
+
+                </div><!-- end row-->
+
+
+            </div>
+
+
+
+
+            </div> <!-- end container-->
+        </div> <!-- end container-->
+    </section
+
+</body>
+</html>

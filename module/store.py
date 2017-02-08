@@ -81,9 +81,13 @@ def checkout():
         return redirect( url_for('home'))
 
 def products(batch_size=1):
-    #a = json.load( open( './json/toymatic_products.json'))
     from app import r
-    a = json.loads( r.get('toys'))
+    a = None
+    toys = r.get('toys')
+    if not toys:
+        a =json.load( open( './json/toymatic_products.json'))
+    else:
+        a = json.loads( )
     if batch_size == 0:
         return a
     b = [a[x:x+batch_size] for x in xrange(0, len(a), batch_size)]

@@ -1,6 +1,6 @@
 import os
 import redis
-from flask import Flask, redirect, url_for
+from flask import Flask, redirect, url_for, request, session, abort
 from flask_mail import Mail
 
 from flask_login import LoginManager,login_required,login_user,UserMixin,logout_user
@@ -51,6 +51,20 @@ app.register_blueprint( paper_blueprint)
 
 from module.dbish import  dbish_blueprint
 app.register_blueprint( dbish_blueprint)
+
+@app.before_request
+def csrf_protect():
+    if request.method == "POST":
+        token = session.pop('_csrf_token', None)
+        if not token or token != request.form.get('_csrf_token'):
+            abort(403)
+
+def generate_csrf_token():
+    if '_csrf_token' not in session:
+        session['_csrf_token'] = "str(os.urandom(24))"
+    return session['_csrf_token']
+
+app.jinja_env.globals['csrf_token'] = generate_csrf_token
 
 @app.route('/')
 def index():
