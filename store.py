@@ -31,8 +31,10 @@ app.config['MAIL_USE_SSL'] = True
 mail.init_app(app)
 
 from mailer import mailer_blueprint
-
 app.register_blueprint( mailer_blueprint)
+
+from inventory import inventory_blueprint
+app.register_blueprint( inventory_blueprint)
 
 @app.route( "/", methods=['GET', 'POST'])
 def home():

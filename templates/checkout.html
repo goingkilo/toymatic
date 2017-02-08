@@ -34,8 +34,9 @@
 
             $('.pagina').hide();
 
-            $('#go_home').click( function() {
-                document.location = "/";
+            $('#go_home').click(function(x){
+                e.preventDefault();
+                document.location = '/';
             });
 
             $('#checkout').click(function(e){
@@ -138,7 +139,6 @@
 
         <div class="col-md-1 portfolio-item k-border">
 
-
         </div>
 
         <div class="col-md-10 portfolio-item k-border">
@@ -162,8 +162,8 @@
                                     </label>
                                 </div>
                             </td>
-                            <td><img src="{{p.image}}"></td>
-                            <td>{{p.title}}</td>
+                            <td><a href="/item?id={{p.id}}"><img src="{{p.image}}"></a></td>
+                            <td><a href="/item?id={{p.id}}"><img src="{{p.image}}">{{p.title}}</a></td>
                             <td>
                                 <h1></h1>
                                 <div style="vertical-align:bottom" class="pull-right">
@@ -178,8 +178,10 @@
                         </tbody>
                     </table>
                     {% else %}
-                    <h3> Your cart is empty ...   </h3>
-                    <button class="btn btn-default" id="go_home" >Browse more toys</button>
+                    <h4> Your cart is empty ...   </h4>
+                    <!--<button class="btn btn-default" id="go_home">Browse more toys</button>-->
+                    <a href="/"><h4>Browse more toys</h4></a>
+
                     {% endif %}
                 </div>
 

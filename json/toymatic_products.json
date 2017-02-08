@@ -8,9 +8,11 @@
     "image":"/static/images/1.jpg",
     "image_large":"/static/images/medium/1.jpg",
     "category":"",
-    "ages":"",
-    "develops":"",
-    "amazon_link":""
+    "ages":"1 -10",
+    "develops":" motor skills",
+    "amazon_link":"",
+    "condition":"",
+    "status":""
   },
   {
     "id":"2",
