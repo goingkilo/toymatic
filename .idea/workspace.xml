@@ -2,56 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eaf590fe-7386-40c9-85c4-adeb872737e4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/inventory/paper/clipper.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/inventory/paper/clipper.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/inventory/paper/layercake.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/inventory/paper/layercake_color.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/marker-icon-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/marker-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/marker-shadow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/inventory/paper/watts.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/paper/essays.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/leaflet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/leaflet.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/paper/map.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/paper/stocks.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/8.jpg" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/large/1.jpg" afterPath="$PROJECT_DIR$/static/images/inventory/large/1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/large/2.jpg" afterPath="$PROJECT_DIR$/static/images/inventory/large/2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/large/3.jpg" afterPath="$PROJECT_DIR$/static/images/inventory/large/3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/large/4.jpg" afterPath="$PROJECT_DIR$/static/images/inventory/large/4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/large/5.jpg" afterPath="$PROJECT_DIR$/static/images/inventory/large/5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/large/6.jpg" afterPath="$PROJECT_DIR$/static/images/inventory/large/6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/large/7.jpg" afterPath="$PROJECT_DIR$/static/images/inventory/large/7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/large/8.jpg" afterPath="$PROJECT_DIR$/static/images/inventory/large/8.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/medium/1.jpg" afterPath="$PROJECT_DIR$/static/images/inventory/medium/1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/medium/2.jpg" afterPath="$PROJECT_DIR$/static/images/inventory/medium/2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/medium/3.jpg" afterPath="$PROJECT_DIR$/static/images/inventory/medium/3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/medium/4.jpg" afterPath="$PROJECT_DIR$/static/images/inventory/medium/4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/medium/5.jpg" afterPath="$PROJECT_DIR$/static/images/inventory/medium/5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/medium/6.jpg" afterPath="$PROJECT_DIR$/static/images/inventory/medium/6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/medium/7.jpg" afterPath="$PROJECT_DIR$/static/images/inventory/medium/7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/medium/8.jpg" afterPath="$PROJECT_DIR$/static/images/inventory/medium/8.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/small/1.jpg" afterPath="$PROJECT_DIR$/static/images/inventory/small/1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/small/2.jpg" afterPath="$PROJECT_DIR$/static/images/inventory/small/2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/small/3.jpg" afterPath="$PROJECT_DIR$/static/images/inventory/small/3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/small/4.jpg" afterPath="$PROJECT_DIR$/static/images/inventory/small/4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/small/5.jpg" afterPath="$PROJECT_DIR$/static/images/inventory/small/5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/small/6.jpg" afterPath="$PROJECT_DIR$/static/images/inventory/small/6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/small/7.jpg" afterPath="$PROJECT_DIR$/static/images/inventory/small/7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/small/8.jpg" afterPath="$PROJECT_DIR$/static/images/inventory/small/8.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/paper/paper.html" afterPath="$PROJECT_DIR$/templates/paper/paper.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/paper.py" afterPath="$PROJECT_DIR$/module/paper.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/paper/stocks.html" afterPath="$PROJECT_DIR$/templates/paper/stocks.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/store.py" afterPath="$PROJECT_DIR$/module/store.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="retail.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,21 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="essays.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/paper/essays.html">
+      <file leaf-file-name="inventory.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/inventory.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.583333">
-              <caret line="63" column="36" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stocks.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/paper/stocks.html">
+      <file leaf-file-name="store.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module/store.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4257274">
-              <caret line="63" column="35" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.6676514">
+              <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -163,13 +115,13 @@
         <option value="$PROJECT_DIR$/templates/auth/login.html" />
         <option value="$PROJECT_DIR$/module/auth.py" />
         <option value="$PROJECT_DIR$/module/dbish.py" />
-        <option value="$PROJECT_DIR$/module/store.py" />
         <option value="$PROJECT_DIR$/module/paper.py" />
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/templates/paper/paper.html" />
         <option value="$PROJECT_DIR$/templates/paper/map.html" />
         <option value="$PROJECT_DIR$/templates/paper/essays.html" />
         <option value="$PROJECT_DIR$/templates/paper/stocks.html" />
+        <option value="$PROJECT_DIR$/module/store.py" />
       </list>
     </option>
   </component>
@@ -866,12 +818,12 @@
       <workItem from="1486180863423" duration="11243000" />
       <workItem from="1486364734937" duration="2007000" />
       <workItem from="1486449175110" duration="21180000" />
-      <workItem from="1486563330659" duration="9795000" />
+      <workItem from="1486563330659" duration="9886000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191577000" />
+    <option name="totallyTimeSpent" value="191668000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="6" />
@@ -1143,14 +1095,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/inventory.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7533235">
-          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/store/item.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3598775">
@@ -1240,14 +1184,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/store.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="93" column="12" selection-start-line="90" selection-start-column="0" selection-end-line="93" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/paper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1305,18 +1241,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/paper/stocks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65543646">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/paper/essays.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.583333">
+        <state vertical-scroll-proportion="0.4257274">
           <caret line="63" column="36" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/paper/stocks.html">
+    <entry file="file://$PROJECT_DIR$/module/inventory.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4257274">
-          <caret line="63" column="35" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/store.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6676514">
+          <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
           <folding />
         </state>
       </provider>
