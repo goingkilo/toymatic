@@ -86,7 +86,7 @@ def products(batch_size=1):
     toys = r.get('toys')
     if not toys:
         a =json.load( open( './json/toymatic_products.json'))
-        r.set( a)
+        r.set( 'toys',a)
     else:
         a = json.loads( toys)
     if batch_size == 0:
