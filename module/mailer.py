@@ -23,7 +23,8 @@ def send():
         message = " requestor : email :" + email + " / phone number :" + phone  + " / toy choice :" + choice
         response = sparky.transmission.send(
             use_sandbox=True,
-            recipients=['pavithra.ramesh@gmail.com,goingkilo@gmail.com'],
+
+            recipients=['pavithra.ramesh@gmail.com'],
             html='<html><body><p>'+message+'</p></body></html>',
             from_email=from_email,
             subject='Customer wants'
@@ -32,7 +33,7 @@ def send():
         cart = session.get('cart', Cart())
         cart.remove_item( choice)
         session['cart'] = cart
-        
+
         print response
     return redirect(url_for('storefront.home'))
 
