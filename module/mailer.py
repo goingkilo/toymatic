@@ -28,6 +28,8 @@ def send():
             from_email=from_email,
             subject='Customer wants'
         )
+        print response
+    return redirect(url_for('storefront.home'))
 
 def senad():
     print 'sending mail'

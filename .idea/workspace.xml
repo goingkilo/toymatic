@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eaf590fe-7386-40c9-85c4-adeb872737e4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/store/checkout.html" afterPath="$PROJECT_DIR$/templates/store/checkout.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/mailer.py" afterPath="$PROJECT_DIR$/module/mailer.py" />
     </list>
     <ignored path="retail.iws" />
@@ -35,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mailer.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mailer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module/mailer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="108" selection-start-line="22" selection-start-column="108" selection-end-line="22" selection-end-column="108" />
+            <state vertical-scroll-proportion="0.5125554">
+              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
               <folding>
                 <element signature="e#2#65#0" expanded="true" />
               </folding>
@@ -59,10 +58,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkout.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="checkout.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/store/checkout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3598775">
+            <state vertical-scroll-proportion="-9.791667">
               <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
               <folding>
                 <marker date="1487079206000" expanded="true" signature="1263:1272" placeholder="..." />
@@ -188,8 +187,8 @@
         <option value="$PROJECT_DIR$/templates/store/item.html" />
         <option value="$PROJECT_DIR$/templates/store/home.html" />
         <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/module/mailer.py" />
         <option value="$PROJECT_DIR$/templates/store/checkout.html" />
+        <option value="$PROJECT_DIR$/module/mailer.py" />
       </list>
     </option>
   </component>
@@ -901,12 +900,12 @@
       <workItem from="1486896254539" duration="4925000" />
       <workItem from="1486902581221" duration="645000" />
       <workItem from="1486999042631" duration="2284000" />
-      <workItem from="1487036541189" duration="9712000" />
+      <workItem from="1487036541189" duration="9841000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211391000" />
+    <option name="totallyTimeSpent" value="211520000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="6" />
@@ -1312,22 +1311,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/mailer.py">
+    <entry file="file://$PROJECT_DIR$/templates/store/checkout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="108" selection-start-line="22" selection-start-column="108" selection-end-line="22" selection-end-column="108" />
+        <state vertical-scroll-proportion="-9.791667">
+          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
           <folding>
-            <element signature="e#2#65#0" expanded="true" />
+            <marker date="1487079206000" expanded="true" signature="1263:1272" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/store/checkout.html">
+    <entry file="file://$PROJECT_DIR$/module/mailer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3598775">
-          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.5125554">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
           <folding>
-            <marker date="1487079206000" expanded="true" signature="1263:1272" placeholder="..." />
+            <element signature="e#2#65#0" expanded="true" />
           </folding>
         </state>
       </provider>
