@@ -26,7 +26,11 @@ class Cart:
                 self.items.remove(item_id)
             return item_id
 
-
+    def __repr__(self):
+        s = ''
+        for i in self.items:
+            s += i +','
+        return s
 
 @store_blueprint.route( "/home", methods=['GET', 'POST'])
 def home():
@@ -62,6 +66,11 @@ def add_item():
     session[ 'cart'] = cart
     return str(cart.get_item_count())
 
+@store_blueprint.route( '/cart/show')
+def show_cart():
+    cart = session.get( 'cart', Cart() )
+    from flask import jsonify
+    return jsonify(str(cart))
 
 @store_blueprint.route("/checkout", methods = ["GET","POST"])
 def checkout():
