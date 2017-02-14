@@ -20,7 +20,7 @@ def send():
         phone = request.form['phone'] or 'none-provided'
         choice = request.form['optradio'] or 'none-provided'
 
-        message = " requestor : email :" + email + " / phone number :" + phone  + " / toy choice :" + optradio
+        message = " requestor : email :" + email + " / phone number :" + phone  + " / toy choice :" + choice
         response = sparky.transmission.send(
             use_sandbox=True,
             recipients=['pavithra.ramesh@gmail.com,goingkilo@gmail.com'],
