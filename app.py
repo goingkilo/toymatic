@@ -25,8 +25,8 @@ app.session_interface = RedisSessionInterface(redis=r)
 mail = Mail()
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'goingkilo@gmail.com'
-app.config['MAIL_PASSWORD'] = 'Erumai1!'
+app.config['MAIL_USERNAME'] = 'admin@toymatic.in'
+app.config['MAIL_PASSWORD'] = 'password!'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail.init_app(app)

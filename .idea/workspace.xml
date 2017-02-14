@@ -2,11 +2,151 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eaf590fe-7386-40c9-85c4-adeb872737e4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/store/checkout.html" afterPath="$PROJECT_DIR$/templates/store/checkout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/contact.html" afterPath="$PROJECT_DIR$/static/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/store/home.html" afterPath="$PROJECT_DIR$/templates/store/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/how.html" afterPath="$PROJECT_DIR$/static/how.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/store/item.html" afterPath="$PROJECT_DIR$/templates/store/item.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests-2.13.0.dist-info/DESCRIPTION.rst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/sparkpost-1.3.3.dist-info/DESCRIPTION.rst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests-2.13.0.dist-info/INSTALLER" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/sparkpost-1.3.3.dist-info/INSTALLER" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests-2.13.0.dist-info/METADATA" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/sparkpost-1.3.3.dist-info/METADATA" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests-2.13.0.dist-info/RECORD" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/sparkpost-1.3.3.dist-info/RECORD" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests-2.13.0.dist-info/WHEEL" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/sparkpost-1.3.3.dist-info/WHEEL" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/idna/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/contrib/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/packages/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/packages/backports/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/packages/ssl_match_hostname/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/util/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/sparkpost/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/sparkpost/django/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/sparkpost/tornado/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/test/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/test/django/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/test/tornado/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/_collections.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/packages/ssl_match_hostname/_implementation.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/_internal_utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/adapters.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/api.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/contrib/appengine.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/auth.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/sparkpost/base.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/sparkpost/tornado/base.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/big5freq.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/big5prober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/cacert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/certs.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/chardetect.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/chardistribution.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/charsetgroupprober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/charsetprober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/idna/codec.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/codingstatemachine.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/compat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/compat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/idna/compat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/connection.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/util/connection.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/constants.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/cookies.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/idna/core.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/cp949prober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/sparkpost/django/email_backend.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/escprober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/escsm.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/eucjpprober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/euckrfreq.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/euckrprober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/euctwfreq.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/euctwprober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/exceptions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/exceptions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/sparkpost/exceptions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/sparkpost/django/exceptions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/sparkpost/tornado/exceptions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/fields.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/filepost.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/gb2312freq.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/gb2312prober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/hebrewprober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/hooks.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/idna/idnadata.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/idna/intranges.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/jisfreq.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/jpcntx.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/langbulgarianmodel.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/langcyrillicmodel.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/langgreekmodel.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/langhebrewmodel.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/langhungarianmodel.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/langthaimodel.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/latin1prober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/packages/backports/makefile.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/mbcharsetprober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/mbcsgroupprober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/mbcssm.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/sparkpost/django/message.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests-2.13.0.dist-info/metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/sparkpost-1.3.3.dist-info/metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/sparkpost/metrics.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/contrib/ntlmpool.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/packages/ordered_dict.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/poolmanager.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/contrib/pyopenssl.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/sparkpost/recipient_lists.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/request.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/util/request.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/response.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/util/response.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/util/retry.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/sbcharsetprober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/sbcsgroupprober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/util/selectors.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/sessions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/packages/six.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/sjisprober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/contrib/socks.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/util/ssl_.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/status_codes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/structures.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/sparkpost/suppression_list.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/sparkpost/templates.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/test/test_base.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/test/django/test_email_backend.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/test/test_init.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/test/django/test_message.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/test/test_metrics.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/test/test_recipient_lists.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/test/test_suppression_list.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/test/test_templates.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/test/tornado/test_tornado.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/test/test_transmissions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/util/timeout.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests-2.13.0.dist-info/top_level.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/sparkpost-1.3.3.dist-info/top_level.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/sparkpost/transmissions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/sparkpost/tornado/transmissions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tst.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/universaldetector.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/util/url.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/chardet/utf8prober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/sparkpost/tornado/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/test/django/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/test/tornado/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/idna/uts46data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/requests/packages/urllib3/util/wait.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/mailer.py" afterPath="$PROJECT_DIR$/module/mailer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="retail.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,12 +168,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/store/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.55130166">
-              <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
+            <state vertical-scroll-proportion="-3.75">
+              <caret line="68" column="69" selection-start-line="68" selection-start-column="69" selection-end-line="68" selection-end-column="69" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mailer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/mailer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding>
+                <element signature="e#2#65#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.62038404">
+              <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,7 +308,6 @@
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/mailer.py" />
         <option value="$PROJECT_DIR$/store.py" />
-        <option value="$PROJECT_DIR$/module/mailer.py" />
         <option value="$PROJECT_DIR$/module/User.java" />
         <option value="$PROJECT_DIR$/templates/auth/login.html" />
         <option value="$PROJECT_DIR$/module/auth.py" />
@@ -155,7 +318,6 @@
         <option value="$PROJECT_DIR$/templates/paper/essays.html" />
         <option value="$PROJECT_DIR$/templates/paper/stocks.html" />
         <option value="$PROJECT_DIR$/module/inventory.py" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/t1" />
         <option value="$PROJECT_DIR$/json/toymatic_products.json" />
         <option value="$USER_HOME$/Desktop/toymatic_inventory/processor.py" />
@@ -169,6 +331,8 @@
         <option value="$PROJECT_DIR$/templates/store/item.html" />
         <option value="$PROJECT_DIR$/templates/store/checkout.html" />
         <option value="$PROJECT_DIR$/templates/store/home.html" />
+        <option value="$PROJECT_DIR$/module/mailer.py" />
+        <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
   </component>
@@ -326,7 +490,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/toymatic_inventory/images" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/kraghunathan/k/flask/toymatic/store.py" />
+    <property name="SearchEverywhereHistoryKey" value="app&#9;FILE&#9;file:///Users/kraghunathan/k/flask/toymatic/app.py" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -880,12 +1044,12 @@
       <workItem from="1486896254539" duration="4925000" />
       <workItem from="1486902581221" duration="645000" />
       <workItem from="1486999042631" duration="2284000" />
-      <workItem from="1487036541189" duration="8256000" />
+      <workItem from="1487036541189" duration="9526000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209935000" />
+    <option name="totallyTimeSpent" value="211205000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="6" />
@@ -1094,6 +1258,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1108,13 +1273,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-37.5">
           <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/mailer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13293944">
-          <caret line="6" column="70" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -1214,13 +1372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35745937">
-          <caret line="55" column="54" selection-start-line="55" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/auth/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.125">
@@ -1242,7 +1393,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#0#20#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1298,9 +1449,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/store/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55130166">
-          <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="68" column="69" selection-start-line="68" selection-start-column="69" selection-end-line="68" selection-end-column="69" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/mailer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#2#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62038404">
+          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
