@@ -37,8 +37,8 @@
       <file leaf-file-name="mailer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module/mailer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5125554">
-              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.6011817">
+              <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
               <folding>
                 <element signature="e#2#65#0" expanded="true" />
               </folding>
@@ -900,12 +900,12 @@
       <workItem from="1486896254539" duration="4925000" />
       <workItem from="1486902581221" duration="645000" />
       <workItem from="1486999042631" duration="2284000" />
-      <workItem from="1487036541189" duration="9841000" />
+      <workItem from="1487036541189" duration="9946000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211520000" />
+    <option name="totallyTimeSpent" value="211625000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="6" />
@@ -1323,8 +1323,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/mailer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5125554">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.6011817">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
           <folding>
             <element signature="e#2#65#0" expanded="true" />
           </folding>

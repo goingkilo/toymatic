@@ -28,6 +28,11 @@ def send():
             from_email=from_email,
             subject='Customer wants'
         )
+
+        cart = session.get('cart', Cart())
+        cart.remove_item( choice)
+        session['cart'] = cart
+        
         print response
     return redirect(url_for('storefront.home'))
 
