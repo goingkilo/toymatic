@@ -73,23 +73,16 @@
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar">a</span>
-                <span class="icon-bar">b</span>
-                <span class="icon-bar">c</span>
-            </button>
             <a class="navbar-brand" href="/store/home">Home</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="#">How it works</a>
+                    <a href="/static/how.html">How it works</a>
                 </li>
-                <!--<li><a href="#">Memberships </a></li>-->
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="/static/contact.html">Contact</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -99,162 +92,152 @@
                             </span><span class="badge label-success"> {{count}}</span></a>
                 </li>
                 <li><a href="#"><span class="glyphicon glyphicon-user"></span> Guest </a></li>
-                <!--<li class="dropdown">-->
-                <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Guest-->
-                <!--<span class="caret"></span></a>-->
-                <!--<ul class="dropdown-menu">-->
-                <!--<li><a href="/user/home">Your Account</a></li>-->
-                <!--<li><a href="/logout">Logout</a></li>-->
-                <!--</ul>-->
-                <!--</li>-->
             </ul>
         </div>
         <!-- /.navbar-collapse -->
-
     </div>
     <!-- /.container -->
-</nav>
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
 
-<!-- Page Content -->
-<div class="container">
-
-    <!-- Page Header -->
-    <div class="row">
-        <div class="col-lg-12" style="text-align: center;vertical-align: middle">
-            <h1 class="page-header">Toymatic
-                <small>Toy Rentals</small>
-            </h1>
-        </div>
-    </div>
-    <!-- /.row -->
-
-    <!-- Projects Row -->
-    <div class="row">
-        <div class="pull-right">
-            <div id="flasher"></div>
-        </div>
-    </div>
-
-    <div class="row">
-
-        <div class="col-md-1 portfolio-item k-border">
-
-        </div>
-
-        <div class="col-md-10 portfolio-item k-border">
-            <form class="form-horizontal" action="/mailer/mail" method="POST">
-
-                <div class="pull-left">
-                    {% set checkedu = False %}
-                    {% if products %}
-                    <table class="table">
-                        <tbody>
-                        {% for p in  products %}
-                        <tr>
-                            <td>
-                                <div class="radio">
-                                    <label>{% if checkedu %}
-                                         <input type="radio" name="optradio" value="{{p.id}}"/>
-                                        {% else %}
-                                            <input type="radio" name="optradio" value="{{p.id}}" checked=""/>
-                                        {% set checkedu = True %}
-                                        {% endif %}
-                                    </label>
-                                </div>
-                            </td>
-                            <td><a href="/store/item?id={{p.id}}"><img src="{{p.image}}"></a></td>
-                            <td><a href="/store/item?id={{p.id}}">{{p.title}}</a></td>
-                            <td>
-                                <h1></h1>
-                                <div style="vertical-align:bottom" class="pull-right">
-                                    <a href="/store/cart/delete?item_id={{p.id}}">  <span class="glyphicon glyphicon-remove"></span></a>
-                                    <!--&nbsp <a href="/cart/wish?id=">Add to wishlist</a>-->
-
-                                </div>
-                            </td>
-
-                        </tr>
-                        {% endfor %}
-                        </tbody>
-                    </table>
-                    {% else %}
-                    <h4> Your cart is empty ...   </h4>
-                    <!--<button class="btn btn-default" id="go_home">Browse more toys</button>-->
-                    <a href="/store/home"><h4>Browse more toys</h4></a>
-
-                    {% endif %}
-                </div>
-
-                <div class="form-group pull-right">
-
-                    <div class="form-group">
-                        <label for="email">Email address:</label>
-                        <input type="email" class="form-control" name="email" id="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone :</label>
-                        <input type="text" class="form-control" name="phone" id="phone">
-                    </div>
-
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-default" id="checkout" >Checkout</button>
-                            <!--<button type="button" class="btn btn-primary" id="checkout" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Processing Order"> Checkout</button>-->
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-
-
-    </div>
-
-    <hr>
-
-    <!-- Pagination -->
-    <div class="row text-center pagina">
-        <div class="col-lg-12">
-            <ul class="pagination">
-                <li>
-                    <a href="#">&laquo;</a>
-                </li>
-                <li class="active">
-                    <a href="#">1</a>
-                </li>
-                <li>
-                    <a href="#">2</a>
-                </li>
-                <li>
-                    <a href="#">3</a>
-                </li>
-                <li>
-                    <a href="#">4</a>
-                </li>
-                <li>
-                    <a href="#">5</a>
-                </li>
-                <li>
-                    <a href="#">&raquo;</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!-- /.row -->
-
-    <hr>
-
-    <!-- Footer -->
-    <footer>
+        <!-- Page Header -->
         <div class="row">
-            <div class="col-lg-12">
-                <p>Copyright &copy; Toymatic 2017</p>
+            <div class="col-lg-12" style="text-align: center;vertical-align: middle">
+                <h1 class="page-header">Toymatic
+                    <small>Toy Rentals</small>
+                </h1>
             </div>
         </div>
         <!-- /.row -->
-    </footer>
 
-</div>
-<!-- /.container -->
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="pull-right">
+                <div id="flasher"></div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-1 portfolio-item k-border">
+
+            </div>
+
+            <div class="col-md-10 portfolio-item k-border">
+                <form class="form-horizontal" action="/mailer/mail" method="POST">
+
+                    <div class="pull-left">
+                        {% set checkedu = False %}
+                        {% if products %}
+                        <table class="table">
+                            <tbody>
+                            {% for p in  products %}
+                            <tr>
+                                <td>
+                                    <div class="radio">
+                                        <label>{% if checkedu %}
+                                             <input type="radio" name="optradio" value="{{p.id}}"/>
+                                            {% else %}
+                                                <input type="radio" name="optradio" value="{{p.id}}" checked=""/>
+                                            {% set checkedu = True %}
+                                            {% endif %}
+                                        </label>
+                                    </div>
+                                </td>
+                                <td><a href="/store/item?id={{p.id}}"><img src="{{p.image}}"></a></td>
+                                <td><a href="/store/item?id={{p.id}}">{{p.title}}</a></td>
+                                <td>
+                                    <h1></h1>
+                                    <div style="vertical-align:bottom" class="pull-right">
+                                        <a href="/store/cart/delete?item_id={{p.id}}">  <span class="glyphicon glyphicon-remove"></span></a>
+                                        <!--&nbsp <a href="/cart/wish?id=">Add to wishlist</a>-->
+
+                                    </div>
+                                </td>
+
+                            </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                        {% else %}
+                        <h4> Your cart is empty ...   </h4>
+                        <!--<button class="btn btn-default" id="go_home">Browse more toys</button>-->
+                        <a href="/store/home"><h4>Browse more toys</h4></a>
+
+                        {% endif %}
+                    </div>
+
+                    <div class="form-group pull-right">
+
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" name="email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone :</label>
+                            <input type="text" class="form-control" name="phone" id="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default" id="checkout" >Checkout</button>
+                                <!--<button type="button" class="btn btn-primary" id="checkout" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Processing Order"> Checkout</button>-->
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+
+        <hr>
+
+        <!-- Pagination -->
+        <div class="row text-center pagina">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Toymatic 2017</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
 
 
 </body>
