@@ -43,7 +43,7 @@ def item():
     prduct = filter( lambda x : x['id'] == str(item_id) , all_products)
     cart = session.get( 'cart',Cart())
     other_images = prduct[0]['secondary_images'].split(',')
-    return  render_template('store/item.html', p=prduct[0] ,others=other_images, count=cart.get_item_count())
+    return  render_template('store/item.html', p=prduct[0], others=other_images, count=cart.get_item_count())
 
 @store_blueprint.route("/cart/delete")
 def rem_item():
@@ -84,7 +84,7 @@ def checkout():
 
 def products(batch_size=1):
     from app import r
-    a = json.load( open( './json/toymatic_products.json'))
+    a = json.load( open( './json/a.json'))
     if batch_size == 0:
         return a
     b = [a[x:x+batch_size] for x in xrange(0, len(a), batch_size)]

@@ -151,7 +151,11 @@
 
                 <div class="toy-tile">
                     <a href="/store/item?id={{p.id}}">
+                        {% if p.image %}
                         <img class="img-responsive" src="{{p.image}}" alt="">
+                        {% else %}
+                        {{p.id}} {{ p.title }}
+                        {% endif %}
                     </a>
 
                     <h4>{{p.title}}</h4>
