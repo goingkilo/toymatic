@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eaf590fe-7386-40c9-85c4-adeb872737e4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/store.py" afterPath="$PROJECT_DIR$/module/store.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/store/checkout.html" afterPath="$PROJECT_DIR$/templates/store/checkout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/contact.html" afterPath="$PROJECT_DIR$/static/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/store/home.html" afterPath="$PROJECT_DIR$/templates/store/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/how.html" afterPath="$PROJECT_DIR$/static/how.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/store/item.html" afterPath="$PROJECT_DIR$/templates/store/item.html" />
     </list>
     <ignored path="retail.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,8 +31,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/store/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.75">
-              <caret line="110" column="10" selection-start-line="81" selection-start-column="4" selection-end-line="110" selection-end-column="10" />
+            <state vertical-scroll-proportion="-6.875">
+              <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="91" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -37,10 +41,10 @@
       <file leaf-file-name="checkout.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/store/checkout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.583334">
-              <caret line="242" column="0" selection-start-line="99" selection-start-column="10" selection-end-line="242" selection-end-column="0" />
+            <state vertical-scroll-proportion="-9.375">
+              <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="80" selection-end-column="21" />
               <folding>
-                <marker date="1487052308000" expanded="true" signature="1263:1272" placeholder="..." />
+                <marker date="1487063262000" expanded="true" signature="1263:1272" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -49,18 +53,18 @@
       <file leaf-file-name="how.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/how.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.333334">
-              <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+            <state vertical-scroll-proportion="-13.75">
+              <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="store.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="store.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/store.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24667652">
-              <caret line="75" column="10" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="86" column="13" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
               <folding>
                 <element signature="e#1#21#0" expanded="true" />
               </folding>
@@ -71,18 +75,18 @@
       <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.9583335">
-              <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+            <state vertical-scroll-proportion="-9.708333">
+              <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="item.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="item.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/store/item.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.083333">
-              <caret line="87" column="6" selection-start-line="87" selection-start-column="6" selection-end-line="87" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.4027565">
+              <caret line="68" column="21" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -159,12 +163,12 @@
         <option value="$PROJECT_DIR$/json/a.json" />
         <option value="$PROJECT_DIR$/loader/a.py" />
         <option value="$PROJECT_DIR$/templates/how.html" />
+        <option value="$PROJECT_DIR$/module/store.py" />
         <option value="$PROJECT_DIR$/templates/store/home.html" />
         <option value="$PROJECT_DIR$/templates/store/checkout.html" />
-        <option value="$PROJECT_DIR$/templates/store/item.html" />
-        <option value="$PROJECT_DIR$/static/contact.html" />
         <option value="$PROJECT_DIR$/static/how.html" />
-        <option value="$PROJECT_DIR$/module/store.py" />
+        <option value="$PROJECT_DIR$/static/contact.html" />
+        <option value="$PROJECT_DIR$/templates/store/item.html" />
       </list>
     </option>
   </component>
@@ -876,12 +880,12 @@
       <workItem from="1486896254539" duration="4925000" />
       <workItem from="1486902581221" duration="645000" />
       <workItem from="1486999042631" duration="2284000" />
-      <workItem from="1487036541189" duration="6206000" />
+      <workItem from="1487036541189" duration="7360000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="207885000" />
+    <option name="totallyTimeSpent" value="209039000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="6" />
@@ -1248,55 +1252,55 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/store/checkout.html">
+    <entry file="file://$PROJECT_DIR$/module/store.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.583334">
-          <caret line="242" column="0" selection-start-line="99" selection-start-column="10" selection-end-line="242" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="13" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
           <folding>
-            <marker date="1487052308000" expanded="true" signature="1263:1272" placeholder="..." />
+            <element signature="e#1#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/store/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.75">
-          <caret line="110" column="10" selection-start-line="81" selection-start-column="4" selection-end-line="110" selection-end-column="10" />
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="91" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/store/checkout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375">
+          <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="80" selection-end-column="21" />
+          <folding>
+            <marker date="1487063262000" expanded="true" signature="1263:1272" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/how.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.75">
+          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.9583335">
-          <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+        <state vertical-scroll-proportion="-9.708333">
+          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/store/item.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.083333">
-          <caret line="87" column="6" selection-start-line="87" selection-start-column="6" selection-end-line="87" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.4027565">
+          <caret line="68" column="21" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/how.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.333334">
-          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/store.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24667652">
-          <caret line="75" column="10" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
-          <folding>
-            <element signature="e#1#21#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
