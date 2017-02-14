@@ -72,6 +72,11 @@ def show_cart():
     from flask import jsonify
     return jsonify(str(cart))
 
+@store_blueprint.route( '/cart/clear')
+def clear_cart():
+    session['cart'] =  Cart()
+    return "OK"
+
 @store_blueprint.route("/checkout", methods = ["GET","POST"])
 def checkout():
     if request.method == "GET":
