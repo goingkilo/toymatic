@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eaf590fe-7386-40c9-85c4-adeb872737e4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/store/checkout.html" afterPath="$PROJECT_DIR$/templates/store/checkout.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/contact.html" afterPath="$PROJECT_DIR$/static/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/store/home.html" afterPath="$PROJECT_DIR$/templates/store/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/how.html" afterPath="$PROJECT_DIR$/static/how.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/store/item.html" afterPath="$PROJECT_DIR$/templates/store/item.html" />
     </list>
     <ignored path="retail.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +31,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/store/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875">
-              <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="91" selection-end-column="25" />
+            <state vertical-scroll-proportion="-15.625">
+              <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -39,10 +41,10 @@
       <file leaf-file-name="checkout.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/store/checkout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.375">
-              <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="80" selection-end-column="21" />
+            <state vertical-scroll-proportion="-10.625">
+              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding>
-                <marker date="1487063262000" expanded="true" signature="1263:1272" placeholder="..." />
+                <marker date="1487064794000" expanded="true" signature="1263:1272" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -51,8 +53,8 @@
       <file leaf-file-name="how.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/how.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48238897">
-              <caret line="67" column="32" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.7350689">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -73,8 +75,8 @@
       <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-62.5">
-              <caret line="100" column="31" selection-start-line="64" selection-start-column="8" selection-end-line="100" selection-end-column="31" />
+            <state vertical-scroll-proportion="-18.75">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -83,8 +85,8 @@
       <file leaf-file-name="item.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/store/item.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.958333">
-              <caret line="68" column="21" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
+            <state vertical-scroll-proportion="-16.583334">
+              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -878,12 +880,12 @@
       <workItem from="1486896254539" duration="4925000" />
       <workItem from="1486902581221" duration="645000" />
       <workItem from="1486999042631" duration="2284000" />
-      <workItem from="1487036541189" duration="7681000" />
+      <workItem from="1487036541189" duration="8083000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209360000" />
+    <option name="totallyTimeSpent" value="209762000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="6" />
@@ -1262,42 +1264,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/store/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875">
-          <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="91" selection-end-column="25" />
+        <state vertical-scroll-proportion="-15.625">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/store/checkout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375">
-          <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="80" selection-end-column="21" />
+        <state vertical-scroll-proportion="-10.625">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
-            <marker date="1487063262000" expanded="true" signature="1263:1272" placeholder="..." />
+            <marker date="1487064794000" expanded="true" signature="1263:1272" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/store/item.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.958333">
-          <caret line="68" column="21" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
+        <state vertical-scroll-proportion="-16.583334">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-62.5">
-          <caret line="100" column="31" selection-start-line="64" selection-start-column="8" selection-end-line="100" selection-end-column="31" />
+        <state vertical-scroll-proportion="-18.75">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/how.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48238897">
-          <caret line="67" column="32" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.7350689">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
