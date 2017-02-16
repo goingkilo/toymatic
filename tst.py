@@ -5,9 +5,9 @@ from_email = 'test@' + os.environ.get('SPARKPOST_SANDBOX_DOMAIN') # 'test@sparkp
 
 response = sparky.transmission.send(
     use_sandbox=True,
-    recipients=['developers+python@sparkpost.com'],
+    recipients=['raghunathan.karthik@gmail.com'],
     html='<html><body><p>Testing SparkPost - the world\'s most awesomest email service!</p></body></html>',
-    from_email=from_email,
+    from_email='kraghunathan@kraghunathan-C02Q4K2YG8WP.local',
     subject='Oh hey!'
 )
 

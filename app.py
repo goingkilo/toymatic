@@ -9,7 +9,7 @@ from flask_bcrypt import Bcrypt
 # --- --- --- --- --- --- APP STUFF  --- --- --- --- ---
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
-app.debug = True
+#app.debug = True
 
 # --- --- --- --- --- --- REDIS STUFF  --- --- --- --- ---
 from module.redis_session import RedisSessionInterface
@@ -25,8 +25,8 @@ app.session_interface = RedisSessionInterface(redis=r)
 mail = Mail()
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'admin@toymatic.in'
-app.config['MAIL_PASSWORD'] = 'password!'
+app.config['MAIL_USERNAME'] = 'toymatic.in@gmail.com'
+app.config['MAIL_PASSWORD'] = 'bommai@123'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail.init_app(app)

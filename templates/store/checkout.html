@@ -156,7 +156,7 @@
                                         <label>{% if checkedu %}
                                              <input type="radio" name="optradio" value="{{p.id}}"/>
                                             {% else %}
-                                                <input type="radio" name="optradio" value="{{p.id}}" checked=""/>
+                                                <input type="radio" name="optradio" value="{{p.id}}_{{p.title}}" checked=""/>
                                             {% set checkedu = True %}
                                             {% endif %}
                                         </label>
