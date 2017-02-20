@@ -6,6 +6,7 @@ small_size = 320,150
 main_size = 800,300
 
 def thumbnail( infile, size, outfile):
+    #print infile
     im = Image.open( infile)
     im.thumbnail( size)
     im.save(outfile)
@@ -40,8 +41,10 @@ def process_row(col):
     counter = 1
     small_images = []
     for i in jpgs:
+        print '[',i,']'
         infile = './'+ folder+'/'+i
         outfile = './' + outfolder+'/'+folder+'_'+str(counter)+'.jpg'
+        print 'i',infile, 'o', outfile
         thumbnail( infile, small_size, outfile)
         counter += 1
         small_images.append( '/static/images/inventory/' + outfile[1:])
@@ -56,8 +59,10 @@ def process_row(col):
     #print json.dumps( ret, indent=4)
     return ret
 
-
-rows = [x for x in readcsv( 'inventory.csv', get_row)]
+import sys
+csv_in = sys.argv[1]
+print 'reading input from ', csv_in
+rows = [x for x in readcsv( csv_in, get_row)]
 a  = []
 for i in rows:
     b = process_row(i)

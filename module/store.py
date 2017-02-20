@@ -77,24 +77,23 @@ def clear_cart():
     session['cart'] =  Cart()
     return "OK"
 
-@store_blueprint.route("/checkout", methods = ["GET","POST"])
+@store_blueprint.route("/checkout")
 def checkout():
-    if request.method == "GET":
-        cart = session.get('cart', None)
-        ret = []
-        if not cart:
-            return  render_template('store/checkout.html', products=ret, count=0)
-        else:
-            items = cart.get_items()
-            p = products(0)
+    cart = session.get('cart', None)
+    ret = []
+    if not cart:
+        return  render_template('store/checkout.html', products=ret, count=0)
+    else:
+        items = cart.get_items()
+        p = products(0)
 
-            for i in items:
-                p1 = filter( lambda x : x['id'] == str(i) , p)
-                ret.append(p1[0])
+        for i in items:
+            p1 = filter( lambda x : x['id'] == str(i) , p)
+            ret.append(p1[0])
 
-            return  render_template('store/checkout.html', products=ret, count=cart.get_item_count())
-    else :
-        return redirect( url_for('home'))
+        return  render_template('store/checkout.html', products=ret, count=cart.get_item_count())
+    #else :
+    #    return redirect( url_for('home'))
 
 def products(batch_size=1):
     from app import r

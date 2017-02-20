@@ -42,15 +42,22 @@ def senad():
     if request.method == 'POST':
         email = request.form['email']
         phone = request.form['phone']
+        toys_in_basket =  [ x for x in request.form.keys() if x.startswith('toy')]
+        print toys_in_basket
         choice = request.form['optradio']
+
         msg = Message( "Toymatic toy request ", sender=('Toymatic Corp',"toymatic.in@gmail.com"), recipients=['goingkilo@gmail.com','pavithra.ramesh@gmail.com'])
-        msg.body = " requestor : email :" + email + "  phone number :" + phone  + " : toy choice :" + choice
-        #msg.body = "" + email + " / " + phone + "/ toy:" + choice
+        msg.body = " requestor : email :" + email + "  phone number :" + phone  + " : toy choice :" + choice + '\n'
+        msg.body += '\n'.join( toys_in_basket)
+
+        print msg.body
+
         cart = session.get('cart', Cart())
+        print 'removing from cart',cart
         cart.remove_item( choice)
         session['cart'] = cart
+        print 'removinged from cart',cart, choice
         from app import mail
         mail.send(msg)
-    print 5
     return redirect(url_for('storefront.home'))
 

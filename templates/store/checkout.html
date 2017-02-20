@@ -145,7 +145,7 @@
                 <form class="form-horizontal" action="/mailer/mail" method="POST">
 
                     <div class="pull-left">
-                        {% set checkedu = False %}
+                        {% set selected = False %}
                         {% if products %}
                         <table class="table">
                             <tbody>
@@ -153,13 +153,14 @@
                             <tr>
                                 <td>
                                     <div class="radio">
-                                        <label>{% if checkedu %}
-                                             <input type="radio" name="optradio" value="{{p.id}}"/>
+                                        <label>{% if selected %}
+                                             <input type="radio" name="optradio" value="{{p.id}}" />
                                             {% else %}
-                                                <input type="radio" name="optradio" value="{{p.id}}_{{p.title}}" checked=""/>
-                                            {% set checkedu = True %}
+                                                <input type="radio" name="optradio" value="{{p.id}}" checked=""/>
+                                                {% set selected = True %}
                                             {% endif %}
                                         </label>
+                                        <input type="hidden" name="toy_{{p.id}}_{{p.title}}"/>
                                     </div>
                                 </td>
                                 <td><a href="/store/item?id={{p.id}}"><img src="{{p.image}}"></a></td>
@@ -198,7 +199,7 @@
 
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn btn-default" id="checkout" >Checkout</button>
+                                <button type="submit" class="btn btn-default" id="checkout" >Place order</button>
                                 <!--<button type="button" class="btn btn-primary" id="checkout" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Processing Order"> Checkout</button>-->
                             </div>
                         </div>

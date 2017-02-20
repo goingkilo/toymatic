@@ -129,7 +129,12 @@
         <div class="col-md-3">
             <ul>
                 <li>
-                    <button class="btn btn-info a1"  id="{{p.id}}">Rent me !</button>
+                    {% if p.unavailable %}
+                    <button class="btn btn-warning a1"  id="{{p.id}}" disabled>Rent me !</button>
+                    currently out on rent
+                    {% else %}
+                    <button class="btn btn-warning a1"  id="{{p.id}}">Rent me !</button>
+                    {% endif %}
                 </li>
                 <li>
                     <button class="btn btn-info a2"  id="{{p.amazon_link}}">Buy me on Amazon</button>
