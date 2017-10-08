@@ -1,6 +1,6 @@
 import os
 import redis
-from flask import Flask, redirect, url_for, request, session, abort
+from flask import Flask, redirect, url_for, request, session, abort,render_template
 from flask_mail import Mail
 
 from flask_login import LoginManager,login_required,login_user,UserMixin,logout_user
@@ -69,9 +69,17 @@ def generate_csrf_token():
 app.jinja_env.globals['csrf_token'] = generate_csrf_token
 """
 
+@app.route('/store')
+def store():
+    return redirect( url_for( 'storefront.home'))
+
 @app.route('/')
 def index():
-    return redirect( url_for( 'storefront.home'))
+    return redirect( '/static/gallery.html')
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
 
 if __name__ == "__main__":
     app.run()
