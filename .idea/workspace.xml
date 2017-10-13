@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eaf590fe-7386-40c9-85c4-adeb872737e4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/gallery/all.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/gallery.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/gallery.html" afterPath="$PROJECT_DIR$/templates/gallery/gallery.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="eaf590fe-7386-40c9-85c4-adeb872737e4" name="Default" comment="" />
     <ignored path="retail.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -944,12 +938,12 @@
       <workItem from="1507485536116" duration="559000" />
       <workItem from="1507492154666" duration="2186000" />
       <workItem from="1507522679479" duration="2419000" />
-      <workItem from="1507896000377" duration="5490000" />
+      <workItem from="1507896000377" duration="5533000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="233165000" />
+    <option name="totallyTimeSpent" value="233208000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
