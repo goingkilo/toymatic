@@ -13,9 +13,11 @@
 
     <style>
 
+
         img {
-            width:333px;
-            height:222px;
+            padding:5px;
+            margin:5px;
+            border:solid 8px black;
         }
         body {
             background-color:ivory;
@@ -25,42 +27,34 @@
             bottom: 0;
             /*height: 100px;*/
             /*width: 100%;*/
-            font-family:newspaper;
             margin-bottom: 15px;
         }
+
 
     </style>
 <body>
 
 <div class="container-fluid">
 
-    <div class="row" style="margin-top:150px">
-        <div class="col-sm-4" >
+
+    {% for imug3 in imugs | batch(3) %}
+        <div class="row" style="margin-top:150px;">
+            <div class="col-sm-2" >
+            </div>
+            {% for imug in imug3%}
+                <div class="col-sm-3" >
+                    <div class="card text-center" style="width: 20rem;">
+                        <img class="card-img-top" src="/static/images/thumbnail/{{imug}}" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title"> </h4>
+                            <p class="card-text"> </p>
+                            <a href="#" style="font-family:newspaper;color:black">{{imug}}</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
         </div>
-        <div class="col-sm-8" >
-            <img src="/static/images/zl.png" class="center-block">
-        </div>
-    </div>
-
-
-    <div class="row">
-        <div class="col-sm-8" >
-
-        </div>
-        <div class="col-sm-4" >
-            <footer style="padding:10px">
-
-                <span style="font-family:newspaper;font-size: 20px">
-                    <b>Karthik Raghunathan</b>
-                </span>
-                <a href="https://www.postergully.com/collections/karthik-raghunathan/products/zen-leaves-square-metal-prints-artist-karthik-raghunathan">Buy</a>
-                <a href="https://www.postergully.com/collections/karthik-raghunathan">Browse</a>
-                <a href="mailto:goingkilo@gmail.com">Contact</a>
-
-            </footer>
-        </div>
-    </div>
-
+    {% endfor %}
 
 </div>
 

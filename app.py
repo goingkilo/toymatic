@@ -9,7 +9,7 @@ from flask_bcrypt import Bcrypt
 # --- --- --- --- --- --- APP STUFF  --- --- --- --- ---
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
-#app.debug = True
+app.debug = True
 
 # --- --- --- --- --- --- REDIS STUFF  --- --- --- --- ---
 from module.redis_session import RedisSessionInterface
@@ -49,6 +49,8 @@ app.register_blueprint( paper_blueprint)
 #from module.auth import auth_blueprint
 #app.register_blueprint( auth_blueprint)
 
+from module.gallery import gallery_blueprint
+app.register_blueprint( gallery_blueprint)
 from module.dbish import  dbish_blueprint
 app.register_blueprint( dbish_blueprint)
 
@@ -75,7 +77,8 @@ def store():
 
 @app.route('/')
 def index():
-    return redirect( '/static/gallery.html')
+    return redirect( url_for( 'gallery.home'))
+    #return redirect( '/static/gallery.html')
 
 @app.errorhandler(404)
 def page_not_found(e):
