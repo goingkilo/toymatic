@@ -6,10 +6,8 @@
     <link rel="stylesheet" href="/static/css/fonts.css">
     <script type="text/javascript" src="/static/js/bootstrap.js"></script>
 
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.css' rel='stylesheet' />
 
     <link rel='shortcut icon' href='/static/images/favicon.ico' type='image/x-icon'/ >
 
@@ -20,6 +18,48 @@
         h1  {
             font-family: typewriter;
         }
+        .navbar-brand {
+            color:white;
+        }
+
+        table {
+            border : solid 1px grey;
+            padding:1px;
+            table-layout: fixed;
+            word-wrap: break-word;
+        }
+
+        td {
+            /*overflow:auto;*/
+            word-wrap:break-word;
+            word-break:break-word;
+        }
+
+        .catg{
+            #background-color:lightsalmon;
+            background-color:aliceblue;
+            border:solid 1px lightslategrey;
+            display:block;
+            margin:2px;
+            white-space: normal;
+        }
+
+        .item-text {
+        }
+
+        .filter {
+            border :solid 1px grey;
+            border-radius: 5px;
+            padding:1px;
+            margin-left:3px;
+        }
+
+        #mapid {
+            height: 380px;
+            border:solid 1px black;
+            padding:5px;
+        }
+        #map { position:absolute; top:0; bottom:0; width:100%; height:380px;}
     </style>
 
 </head>
@@ -29,6 +69,10 @@
 
         $(document).ready(function () {
             console.log( "## Welcome to the Map world## ");
+
+            
+ 
+
         });
 
     </script>
@@ -61,23 +105,20 @@
                     <div class="col-sm-3"></div>
 
                     <div class="col-sm-6">
-                        <div id="line-example"></div>
+                        <div id='map'></div>
                         <script>
-                            Morris.Line({
-                              element: 'line-example',
-                              data: [
-                                { y: '2006', a: 100, b: 90 },
-                                { y: '2007', a: 75,  b: 65 },
-                                { y: '2008', a: 50,  b: 40 },
-                                { y: '2009', a: 75,  b: 65 },
-                                { y: '2010', a: 50,  b: 40 },
-                                { y: '2011', a: 75,  b: 65 },
-                                { y: '2012', a: 100, b: 90 }
-                              ],
-                              xkey: 'y',
-                              ykeys: ['a', 'b'],
-                              labels: ['Series A', 'Series B']
-                            });
+                        var ll  =  [ 77.5946,12.9716 ];//[-74.50, 40]
+
+                        mapboxgl.accessToken = 'pk.eyJ1Ijoia2FydGhpa3JhZ2h1IiwiYSI6IlNVNkExaXcifQ._x0s5MUlWNqoTBaqQT3lSg';
+                        var map = new mapboxgl.Map({
+                            container: 'map', // container id
+                            style: 'mapbox://styles/karthikraghu/cjb3eiwpb4nas2tpjyl8bj5h6', //mapbox://styles/mapbox/streets-v9', // stylesheet location
+                            center: ll, // starting position [lng, lat]
+                            zoom: 9 // starting zoom
+                        });
+
+                        map.addControl(new mapboxgl.NavigationControl());
+                        
                         </script>
                     </div>
 
@@ -85,7 +126,11 @@
 
                 </div><!-- end row-->
 
+
             </div>
+
+
+
 
             </div> <!-- end container-->
         </div> <!-- end container-->
