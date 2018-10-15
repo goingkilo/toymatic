@@ -88,7 +88,8 @@ def search():
 
 @app.route('/')
 def index():
-    return redirect( url_for( 'gallery.home'))
+    #return redirect( url_for( 'gallery.home'))
+    return redirect( '/static/ffacebook.html')
     #return redirect( '/static/gallery.html')
 
 @app.errorhandler(404)
