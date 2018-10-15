@@ -27,10 +27,7 @@
 
     <script>
 
-        $(document).ready(function () {
-            console.log( "## Welcome to the Map world## ");
-        });
-
+        
     </script>
     <section>
         <div class="container">
@@ -63,21 +60,39 @@
                     <div class="col-sm-6">
                         <div id="line-example"></div>
                         <script>
-                            Morris.Line({
-                              element: 'line-example',
-                              data: [
-                                { y: '2006', a: 100, b: 90 },
-                                { y: '2007', a: 75,  b: 65 },
-                                { y: '2008', a: 50,  b: 40 },
-                                { y: '2009', a: 75,  b: 65 },
-                                { y: '2010', a: 50,  b: 40 },
-                                { y: '2011', a: 75,  b: 65 },
-                                { y: '2012', a: 100, b: 90 }
-                              ],
-                              xkey: 'y',
-                              ykeys: ['a', 'b'],
-                              labels: ['Series A', 'Series B']
+
+                        $(document).ready( function () {
+                            console.log( "## Welcome to the magical world of Stocks ## ");
+                            $.get( '/paper/stocks/tvs', function ( stock_data1){
+
+                                var stock_data = stock_data1; //.slice ( 1,30);
+
+                                Morris.Line({
+                                  element: 'line-example',
+                                  data: stock_data,
+                                  xkey: 'Date',
+                                  ykeys: ['Close'], //['Close', 'Volume'],
+                                  labels: 'Price'//['Price', 'Volume']
+                                });
                             });
+                        });
+
+
+                            // Morris.Line({
+                            //   element: 'line-example',
+                            //   data: [
+                            //     { y: '2006', a: 100, b: 90 },
+                            //     { y: '2007', a: 75,  b: 65 },
+                            //     { y: '2008', a: 50,  b: 40 },
+                            //     { y: '2009', a: 75,  b: 65 },
+                            //     { y: '2010', a: 50,  b: 40 },
+                            //     { y: '2011', a: 75,  b: 65 },
+                            //     { y: '2012', a: 100, b: 90 }
+                            //   ],
+                            //   xkey: 'y',
+                            //   ykeys: ['a', 'b'],
+                            //   labels: ['Series A', 'Series B']
+                            // });
                         </script>
                     </div>
 

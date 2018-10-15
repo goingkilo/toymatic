@@ -1,6 +1,6 @@
 import os
 import redis
-from flask import Flask, redirect, url_for, request, session, abort,render_template
+from flask import Flask, redirect, url_for, request, session, abort,render_template, jsonify
 from flask_mail import Mail
 
 from flask_login import LoginManager,login_required,login_user,UserMixin,logout_user
@@ -31,6 +31,10 @@ app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail.init_app(app)
 
+# --- --- --- --- --- --- Load  security symbols --- --- --- --- ---
+f = open('sec_list.csv').read().split('\n')
+equities  = [x for x in f if x and x.split(',')[1] == 'EQ']
+
 
 # --- --- --- --- --- --- REGISTER BLUEPRINTS --- --- --- --- ---
 
@@ -51,6 +55,7 @@ app.register_blueprint( paper_blueprint)
 
 from module.gallery import gallery_blueprint
 app.register_blueprint( gallery_blueprint)
+
 from module.dbish import  dbish_blueprint
 app.register_blueprint( dbish_blueprint)
 
@@ -74,6 +79,12 @@ app.jinja_env.globals['csrf_token'] = generate_csrf_token
 @app.route('/store')
 def store():
     return redirect( url_for( 'storefront.home'))
+
+@app.route('/search')
+def search():
+    a = [x.split(',') for x in open('sec_list.csv').read().split('\n') if x]
+    b = [x[0] for x in a if x[1] == 'EQ']
+    return jsonify(b)
 
 @app.route('/')
 def index():

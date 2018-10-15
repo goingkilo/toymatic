@@ -1,0 +1,19 @@
+
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.css' rel='stylesheet' />
+
+
+
+<div id='map' style='width: 600px; height: 600px;'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1Ijoia2FydGhpa3JhZ2h1IiwiYSI6IlNVNkExaXcifQ._x0s5MUlWNqoTBaqQT3lSg';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/karthikraghu/cjb3eiwpb4nas2tpjyl8bj5h6',
+    center: [77.7247, 12.9820], 
+    zoom: 9 // 
+});
+var marker = new mapboxgl.Marker()
+  .setLngLat([77.7247, 12.9820])
+  .addTo(map);
+</script>
