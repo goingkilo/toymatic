@@ -1,5 +1,6 @@
 import os
 import redis
+import base64
 from flask import Flask, redirect, url_for, request, session, abort,render_template, jsonify
 from flask_mail import Mail
 
@@ -25,8 +26,8 @@ app.session_interface = RedisSessionInterface(redis=r)
 mail = Mail()
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'toymatic.in@gmail.com'
-app.config['MAIL_PASSWORD'] = 'bommai@123'
+app.config['MAIL_USERNAME'] = base64.b64decode('dG95bWF0aWMuaW5AZ21haWwuY29t')
+app.config['MAIL_PASSWORD'] = base64.b64decode('Ym9tbWFpQDEyMw==')
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail.init_app(app)
